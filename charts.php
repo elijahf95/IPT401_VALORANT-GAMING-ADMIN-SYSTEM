@@ -70,7 +70,7 @@
 										        </div>
 									        </div><!--//col--> 
 								        </div><!--//row-->
-								        <a class="link-mask" href="notifications.html"></a>
+								        <a class="link-mask" href="notifications.php"></a>
 							       </div><!--//item-->
 							       <div class="item p-3">
 								        <div class="row gx-2 justify-content-between align-items-center">
@@ -89,7 +89,7 @@
 										        </div>
 									        </div><!--//col-->
 								        </div><!--//row-->
-								        <a class="link-mask" href="notifications.html"></a>
+								        <a class="link-mask" href="notifications.php"></a>
 							       </div><!--//item-->
 							       <div class="item p-3">
 								        <div class="row gx-2 justify-content-between align-items-center">
@@ -107,7 +107,7 @@
 										        </div>
 									        </div><!--//col-->
 								        </div><!--//row-->
-								        <a class="link-mask" href="notifications.html"></a>
+								        <a class="link-mask" href="notifications.php"></a>
 							       </div><!--//item-->
 							       <div class="item p-3">
 								        <div class="row gx-2 justify-content-between align-items-center">
@@ -121,18 +121,18 @@
 										        </div>
 									        </div><!--//col--> 
 								        </div><!--//row-->
-								        <a class="link-mask" href="notifications.html"></a>
+								        <a class="link-mask" href="notifications.php"></a>
 							       </div><!--//item-->
 						        </div><!--//dropdown-menu-content-->
 						        
 						        <div class="dropdown-menu-footer p-2 text-center">
-							        <a href="notifications.html">View all</a>
+							        <a href="notifications.php">View all</a>
 						        </div>
 															
 							</div><!--//dropdown-menu-->					        
 				        </div><!--//app-utility-item-->
 			            <div class="app-utility-item">
-				            <a href="settings.html" title="Settings">
+				            <a href="settings.php" title="Settings">
 					            <!--//Bootstrap Icons: https://icons.getbootstrap.com/ -->
 					            <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-gear icon" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
   <path fill-rule="evenodd" d="M8.837 1.626c-.246-.835-1.428-.835-1.674 0l-.094.319A1.873 1.873 0 0 1 4.377 3.06l-.292-.16c-.764-.415-1.6.42-1.184 1.185l.159.292a1.873 1.873 0 0 1-1.115 2.692l-.319.094c-.835.246-.835 1.428 0 1.674l.319.094a1.873 1.873 0 0 1 1.115 2.693l-.16.291c-.415.764.42 1.6 1.185 1.184l.292-.159a1.873 1.873 0 0 1 2.692 1.116l.094.318c.246.835 1.428.835 1.674 0l.094-.319a1.873 1.873 0 0 1 2.693-1.115l.291.16c.764.415 1.6-.42 1.184-1.185l-.159-.291a1.873 1.873 0 0 1 1.116-2.693l.318-.094c.835-.246.835-1.428 0-1.674l-.319-.094a1.873 1.873 0 0 1-1.115-2.692l.16-.292c.415-.764-.42-1.6-1.185-1.184l-.291.159A1.873 1.873 0 0 1 8.93 1.945l-.094-.319zm-2.633-.283c.527-1.79 3.065-1.79 3.592 0l.094.319a.873.873 0 0 0 1.255.52l.292-.16c1.64-.892 3.434.901 2.54 2.541l-.159.292a.873.873 0 0 0 .52 1.255l.319.094c1.79.527 1.79 3.065 0 3.592l-.319.094a.873.873 0 0 0-.52 1.255l.16.292c.893 1.64-.902 3.434-2.541 2.54l-.292-.159a.873.873 0 0 0-1.255.52l-.094.319c-.527 1.79-3.065 1.79-3.592 0l-.094-.319a.873.873 0 0 0-1.255-.52l-.292.16c-1.64.893-3.433-.902-2.54-2.541l.159-.292a.873.873 0 0 0-.52-1.255l-.319-.094c-1.79-.527-1.79-3.065 0-3.592l.319-.094a.873.873 0 0 0 .52-1.255l-.16-.292c-.892-1.64.902-3.433 2.541-2.54l.292.159a.873.873 0 0 0 1.255-.52l.094-.319z"/>
@@ -144,10 +144,10 @@
 			            <div class="app-utility-item app-user-dropdown dropdown">
 				            <a class="dropdown-toggle" id="user-dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false"><img src="assets/images/user.png" alt="user profile"></a>
 				            <ul class="dropdown-menu" aria-labelledby="user-dropdown-toggle">
-								<li><a class="dropdown-item" href="account.html">Account</a></li>
-								<li><a class="dropdown-item" href="settings.html">Settings</a></li>
+								<li><a class="dropdown-item" href="account.php">Account</a></li>
+								<li><a class="dropdown-item" href="settings.php">Settings</a></li>
 								<li><hr class="dropdown-divider"></li>
-								<li><a class="dropdown-item" href="login.html">Log Out</a></li>
+								<li><a class="dropdown-item" href="login.php">Log Out</a></li>
 							</ul>
 			            </div><!--//app-user-dropdown-->  
 		            </div><!--//app-utilities-->
