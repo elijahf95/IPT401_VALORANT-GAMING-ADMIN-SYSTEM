@@ -1,3 +1,49 @@
+<?php
+// Check if the form is submitted
+if ($_SERVER["REQUEST_METHOD"] == "POST") {
+    // Database connection
+    $servername = "localhost"; // Your MySQL server address
+    $username = "valo"; // Your MySQL username
+    $password = "123"; // Your MySQL password
+    $dbname = "valo_db"; // Your MySQL database name
+
+    $sql = 'SELECT * FROM valo_table';
+
+    // Create connection
+    $conn = new mysqli($servername, $username, $password, $dbname);
+
+    // Check connection
+    if ($conn->connect_error) {
+        die("Connection failed: " . $conn->connect_error);
+    }
+
+    // Prepare and bind the data
+    $name = $_POST['signup-name'];
+    $email = $_POST['signup-email'];
+    $password = $_POST['signup-password'];
+
+    // Insert data into the database
+    $sql = "INSERT INTO valo_table (name, email, password) VALUES ('".$name."', '".$email."', '".$password."')";
+    $stmt = $conn->prepare($sql);
+    $stmt->bind_param("sss", $name, $email, $password);
+
+    // Execute the statement
+    if ($stmt->execute() === TRUE) {
+        // Redirect to the login page
+        header("Location: login.php");
+        exit();
+    } else {
+        echo "Error: " . $sql . "<br>" . $conn->error;
+    }
+
+    // Close the statement and connection
+    $result = $conn->query($sql);
+    $stmt->close();
+    $conn->close();
+}
+?>
+
+
 <!DOCTYPE html>
 <html lang="en"> 
 <head>
@@ -42,6 +88,10 @@
 <path fill="#ff4655" opacity="1.00" d=" M 919.64 546.01 C 919.43 544.19 921.37 543.14 922.96 543.35 C 952.32 543.30 981.68 543.35 1011.04 543.33 C 1013.58 543.17 1016.24 544.00 1017.79 546.14 C 1022.99 552.62 1028.24 559.08 1033.35 565.64 C 1034.70 566.74 1033.69 568.92 1031.99 568.62 C 1016.64 568.74 1001.28 568.62 985.92 568.67 C 985.85 606.11 986.01 643.55 986.00 680.99 C 986.36 682.78 985.13 684.84 983.13 684.63 C 976.12 684.69 969.10 684.72 962.10 684.62 C 960.61 684.75 959.31 683.43 959.46 681.96 C 959.21 644.20 959.45 606.43 959.25 568.67 C 947.14 568.64 935.02 568.71 922.92 568.65 C 921.31 568.84 919.39 567.73 919.64 565.91 C 919.54 559.28 919.53 552.64 919.64 546.01 Z" />
 </g>
 </svg></a></div>
+
+
+
+
 					<h2 class="auth-heading text-center mb-4">Sign up your Account</h2>					
 	
 					<div class="auth-form-container text-start mx-auto">
@@ -74,9 +124,8 @@
 						
 						<div class="auth-option text-center pt-5">Already have an account? <a class="text-link" href="login.php" >Log in</a></div>
 					</div><!--//auth-form-container-->	
-					
-					
-				    
+			
+	    
 			    </div><!--//auth-body-->
 		    
 			    <footer class="app-auth-footer">

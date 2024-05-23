@@ -1,3 +1,54 @@
+<?php
+session_start();
+
+// Check if the form is submitted
+if ($_SERVER["REQUEST_METHOD"] == "POST") {
+    // Database connection
+    $servername = "localhost"; // Your MySQL server address
+    $username = "valo"; // Your MySQL username
+    $password = "123"; // Your MySQL password
+    $dbname = "valo_db"; // Your MySQL database name
+
+    // Create connection
+    $conn = new mysqli($servername, $username, $password, $dbname);
+
+    // Check connection
+    if ($conn->connect_error) {
+        die("Connection failed: " . $conn->connect_error);
+    }
+
+    // Prepare and bind the data
+    $email = $_POST['signin-email'];
+    $password = $_POST['signin-password'];
+
+    // Check if the email and password match in the database
+    $sql = "SELECT * FROM valo_table WHERE email = ? AND password = ?";
+    $stmt = $conn->prepare($sql);
+    $stmt->bind_param("ss", $email, $password);
+    $stmt->execute();
+    $result = $stmt->get_result();
+
+    // If a user is found, redirect to index.php
+    if ($result->num_rows == 1) {
+        // Store user information in session if needed
+        $_SESSION['email'] = $email;
+
+        // Redirect to index.php
+        header("Location: index.php");
+        exit();
+    } else {
+        // Redirect back to login page with error message
+        header("Location: login.php?error=invalid_credentials");
+        exit();
+    }
+
+    // Close the statement and connection
+    $stmt->close();
+    $conn->close();
+}
+?>
+
+
 <!DOCTYPE html>
 <html lang="en"> 
 <head>
