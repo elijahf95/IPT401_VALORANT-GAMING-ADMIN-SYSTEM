@@ -1,48 +1,54 @@
 <?php
-// Check if the form is submitted
+// Configuration
+$db_host = 'localhost';
+$db_username = 'user_valo';
+$db_password = '123';
+$db_name = 'valo_db';
+
+// Create connection
+$conn = new mysqli($db_host, $db_username, $db_password, $db_name);
+
+// Check connection
+if ($conn->connect_error) {
+    die("Connection failed: " . $conn->connect_error);
+}
+
+// Process form data
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
-    // Database connection
-    $servername = "localhost"; // Your MySQL server address
-    $username = "valo"; // Your MySQL username
-    $password = "123"; // Your MySQL password
-    $dbname = "valo_db"; // Your MySQL database name
+    $name = $_POST["signup-name"];
+    $email = $_POST["signup-email"];
+    $password = $_POST["signup-password"];
 
-    $sql = 'SELECT * FROM valo_table';
-
-    // Create connection
-    $conn = new mysqli($servername, $username, $password, $dbname);
-
-    // Check connection
-    if ($conn->connect_error) {
-        die("Connection failed: " . $conn->connect_error);
+    // Validate input
+    if (!filter_var($email, FILTER_VALIDATE_EMAIL)) {
+        echo "Invalid email format";
+        exit;
     }
 
-    // Prepare and bind the data
-    $name = $_POST['signup-name'];
-    $email = $_POST['signup-email'];
-    $password = $_POST['signup-password'];
+    // Hash password for security
+    $hashed_password = password_hash($password, PASSWORD_DEFAULT);
 
-    // Insert data into the database
-    $sql = "INSERT INTO valo_table (name, email, password) VALUES ('".$name."', '".$email."', '".$password."')";
-    $stmt = $conn->prepare($sql);
-    $stmt->bind_param("sss", $name, $email, $password);
+    // Insert data into database
+    $query = "INSERT INTO users (name, email, password) VALUES (?, ?, ?)";
+    $stmt = $conn->prepare($query);
+    $stmt->bind_param("sss", $name, $email, $hashed_password);
+    $stmt->execute();
 
-    // Execute the statement
-    if ($stmt->execute() === TRUE) {
-        // Redirect to the login page
-        header("Location: login.php");
-        exit();
+    // Check if data was inserted successfully
+    if ($stmt->affected_rows > 0) {
+        // Redirect to login page
+        $_SESSION['message'] = "User account created successfully! Please log in.";
+        header('Location: login.php');
+        exit;
     } else {
-        echo "Error: " . $sql . "<br>" . $conn->error;
+        echo "Error creating user account: " . $conn->error;
     }
 
-    // Close the statement and connection
-    $result = $conn->query($sql);
     $stmt->close();
     $conn->close();
 }
-?>
 
+?>
 
 <!DOCTYPE html>
 <html lang="en"> 
@@ -91,22 +97,22 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
 
 
-
+				<form action="signup.php" method="post">
 					<h2 class="auth-heading text-center mb-4">Sign up your Account</h2>					
 	
 					<div class="auth-form-container text-start mx-auto">
 						<form class="auth-form auth-signup-form">         
 							<div class="email mb-3">
-								<label class="sr-only" for="signup-email">Your Name</label>
-								<input id="signup-name" name="signup-name" type="text" class="form-control signup-name" placeholder="Full name" required="required">
+								<label class="sr-only" for="signup-name">Name</label>
+            <input id="signup-name" name="signup-name" type="text" class="form-control signup-name" placeholder="Name" required="required">
 							</div>
 							<div class="email mb-3">
-								<label class="sr-only" for="signup-email">Your Email</label>
-								<input id="signup-email" name="signup-email" type="email" class="form-control signup-email" placeholder="Email" required="required">
+								<label class="sr-only" for="signup-email">Email</label>
+            <input id="signup-email" name="signup-email" type="email" class="form-control signup-email" placeholder="Email address" required="required">
 							</div>
 							<div class="password mb-3">
 								<label class="sr-only" for="signup-password">Password</label>
-								<input id="signup-password" name="signup-password" type="password" class="form-control signup-password" placeholder="Create a password" required="required">
+            <input id="signup-password" name="signup-password" type="password" class="form-control signup-password" placeholder="Password" required="required">
 							</div>
 							<div class="extra mb-3">
 								<div class="form-check">
@@ -127,6 +133,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 			
 	    
 			    </div><!--//auth-body-->
+			</form>
 		    
 			    <footer class="app-auth-footer">
 				    <div class="container text-center py-3">

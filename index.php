@@ -140,7 +140,6 @@
 								<li><a class="dropdown-item" href="account.php">Account</a></li>
 								<li><a class="dropdown-item" href="settings.php">Settings</a></li>
 								<li><hr class="dropdown-divider"></li>
-								<?php echo htmlspecialchars($_SESSION['email']); ?>!
 								<li><a class="dropdown-item" href="login.php">Log Out</a></li>
 							</ul>
 			            </div><!--//app-user-dropdown--> 

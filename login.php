@@ -1,53 +1,58 @@
 <?php
-session_start();
+// Configuration
+$db_host = 'localhost';
+$db_username = 'user_valo';
+$db_password = '123';
+$db_name = 'valo_db';
 
-// Check if the form is submitted
+// Create connection
+$conn = new mysqli($db_host, $db_username, $db_password, $db_name);
+
+// Check connection
+if ($conn->connect_error) {
+    die("Connection failed: " . $conn->connect_error);
+}
+
+// Check if user is logged in
+if ($conn->connect_error) {
+    die("Connection failed: " . $conn->connect_error);
+}
+
+// Check if form is submitted
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
-    // Database connection
-    $servername = "localhost"; // Your MySQL server address
-    $username = "valo"; // Your MySQL username
-    $password = "123"; // Your MySQL password
-    $dbname = "valo_db"; // Your MySQL database name
+    $email = $_POST['email'];
+    $password = $_POST['password'];
 
-    // Create connection
-    $conn = new mysqli($servername, $username, $password, $dbname);
-
-    // Check connection
-    if ($conn->connect_error) {
-        die("Connection failed: " . $conn->connect_error);
-    }
-
-    // Prepare and bind the data
-    $email = $_POST['signin-email'];
-    $password = $_POST['signin-password'];
-
-    // Check if the email and password match in the database
-    $sql = "SELECT * FROM valo_table WHERE email = ? AND password = ?";
-    $stmt = $conn->prepare($sql);
-    $stmt->bind_param("ss", $email, $password);
+    // Query to retrieve user data
+    $query = "SELECT * FROM users WHERE email = ?";
+    $stmt = $conn->prepare($query);
+    $stmt->bind_param("s", $email);
     $stmt->execute();
     $result = $stmt->get_result();
 
-    // If a user is found, redirect to index.php
-    if ($result->num_rows == 1) {
-        // Store user information in session if needed
-        $_SESSION['email'] = $email;
+    // Check if user exists
+    if ($result->num_rows > 0) {
+        $user_data = $result->fetch_assoc();
+        $hashed_password = $user_data['password'];
 
-        // Redirect to index.php
-        header("Location: index.php");
-        exit();
+        // Verify password
+        if (password_verify($password, $hashed_password)) {
+            // Login successful, redirect to index.php
+            session_start();
+            $_SESSION['email'] = $email;
+            header('Location: index.php');
+            exit;
+        } else {
+            $error = "Invalid password";
+        }
     } else {
-        // Redirect back to login page with error message
-        header("Location: login.php?error=invalid_credentials");
-        exit();
+        $error = "User not found";
     }
-
-    // Close the statement and connection
-    $stmt->close();
-    $conn->close();
 }
-?>
 
+// Close connection
+$conn->close();
+?>
 
 <!DOCTYPE html>
 <html lang="en"> 
@@ -77,7 +82,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 		    <div class="d-flex flex-column align-content-end">
 			    <div class="app-auth-body mx-auto">	
 				    <div class="app-auth-branding mb-4">
-				    	<a href="index.php"><svg width="300pt" height="200pt" viewBox="0 0 1100 697" version="1.1" xmlns="http://www.w3.org/2000/svg">
+				    	<a href="#"><svg width="300pt" height="200pt" viewBox="0 0 1100 697" version="1.1" xmlns="http://www.w3.org/2000/svg">
 <g id="f000000ff">
 </g>
 <g id="ff4655ff">
@@ -93,16 +98,17 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 <path fill="#ff4655" opacity="1.00" d=" M 919.64 546.01 C 919.43 544.19 921.37 543.14 922.96 543.35 C 952.32 543.30 981.68 543.35 1011.04 543.33 C 1013.58 543.17 1016.24 544.00 1017.79 546.14 C 1022.99 552.62 1028.24 559.08 1033.35 565.64 C 1034.70 566.74 1033.69 568.92 1031.99 568.62 C 1016.64 568.74 1001.28 568.62 985.92 568.67 C 985.85 606.11 986.01 643.55 986.00 680.99 C 986.36 682.78 985.13 684.84 983.13 684.63 C 976.12 684.69 969.10 684.72 962.10 684.62 C 960.61 684.75 959.31 683.43 959.46 681.96 C 959.21 644.20 959.45 606.43 959.25 568.67 C 947.14 568.64 935.02 568.71 922.92 568.65 C 921.31 568.84 919.39 567.73 919.64 565.91 C 919.54 559.28 919.53 552.64 919.64 546.01 Z" />
 </g>
 </svg></a></div>
+<form action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>" method="post">
 					<h2 class="auth-heading text-center mb-5">Log in your Account</h2>
 			        <div class="auth-form-container text-start">
 						<form class="auth-form login-form">         
 							<div class="email mb-3">
-								<label class="sr-only" for="signin-email">Email</label>
-								<input id="signin-email" name="signin-email" type="email" class="form-control signin-email" placeholder="Email address" required="required">
+								 <label class="sr-only" for="signin-email">Email</label>
+            <input id="signin-email" name="email" type="email" class="form-control signin-email" placeholder="Email address" required="required">
 							</div><!--//form-group-->
 							<div class="password mb-3">
 								<label class="sr-only" for="signin-password">Password</label>
-								<input id="signin-password" name="signin-password" type="password" class="form-control signin-password" placeholder="Password" required="required">
+            <input id="signin-password" name="password" type="password" class="form-control signin-password" placeholder="Password" required="required">
 								<div class="extra mt-3 row justify-content-between">
 									<div class="col-6">
 										<div class="form-check">
@@ -128,6 +134,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 					</div><!--//auth-form-container-->	
 
 			    </div><!--//auth-body-->
+			</form>
 		    
 			    <footer class="app-auth-footer">
 				    <div class="container text-center py-3">
