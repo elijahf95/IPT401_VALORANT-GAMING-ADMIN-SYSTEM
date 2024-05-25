@@ -78,7 +78,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 		    <div class="d-flex flex-column align-content-end">
 			    <div class="app-auth-body mx-auto">	
 				    <div class="app-auth-branding mb-4">
-				    	<a href="index.php"> <svg width="300pt" height="200pt" viewBox="0 0 1100 697" version="1.1" xmlns="http://www.w3.org/2000/svg">
+				    	<a href="#.php"> <svg width="300pt" height="200pt" viewBox="0 0 1100 697" version="1.1" xmlns="http://www.w3.org/2000/svg">
 <g id="f000000ff">
 </g>
 <g id="ff4655ff">

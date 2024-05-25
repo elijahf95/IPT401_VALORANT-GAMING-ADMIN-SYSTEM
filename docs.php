@@ -127,10 +127,7 @@
 			            <div class="app-utility-item">
 				            <a href="settings.html" title="Settings">
 					            <!--//Bootstrap Icons: https://icons.getbootstrap.com/ -->
-					            <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-gear icon" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-  <path fill-rule="evenodd" d="M8.837 1.626c-.246-.835-1.428-.835-1.674 0l-.094.319A1.873 1.873 0 0 1 4.377 3.06l-.292-.16c-.764-.415-1.6.42-1.184 1.185l.159.292a1.873 1.873 0 0 1-1.115 2.692l-.319.094c-.835.246-.835 1.428 0 1.674l.319.094a1.873 1.873 0 0 1 1.115 2.693l-.16.291c-.415.764.42 1.6 1.185 1.184l.292-.159a1.873 1.873 0 0 1 2.692 1.116l.094.318c.246.835 1.428.835 1.674 0l.094-.319a1.873 1.873 0 0 1 2.693-1.115l.291.16c.764.415 1.6-.42 1.184-1.185l-.159-.291a1.873 1.873 0 0 1 1.116-2.693l.318-.094c.835-.246.835-1.428 0-1.674l-.319-.094a1.873 1.873 0 0 1-1.115-2.692l.16-.292c.415-.764-.42-1.6-1.185-1.184l-.291.159A1.873 1.873 0 0 1 8.93 1.945l-.094-.319zm-2.633-.283c.527-1.79 3.065-1.79 3.592 0l.094.319a.873.873 0 0 0 1.255.52l.292-.16c1.64-.892 3.434.901 2.54 2.541l-.159.292a.873.873 0 0 0 .52 1.255l.319.094c1.79.527 1.79 3.065 0 3.592l-.319.094a.873.873 0 0 0-.52 1.255l.16.292c.893 1.64-.902 3.434-2.541 2.54l-.292-.159a.873.873 0 0 0-1.255.52l-.094.319c-.527 1.79-3.065 1.79-3.592 0l-.094-.319a.873.873 0 0 0-1.255-.52l-.292.16c-1.64.893-3.433-.902-2.54-2.541l.159-.292a.873.873 0 0 0-.52-1.255l-.319-.094c-1.79-.527-1.79-3.065 0-3.592l.319-.094a.873.873 0 0 0 .52-1.255l-.16-.292c-.892-1.64.902-3.433 2.541-2.54l.292.159a.873.873 0 0 0 1.255-.52l.094-.319z"/>
-  <path fill-rule="evenodd" d="M8 5.754a2.246 2.246 0 1 0 0 4.492 2.246 2.246 0 0 0 0-4.492zM4.754 8a3.246 3.246 0 1 1 6.492 0 3.246 3.246 0 0 1-6.492 0z"/>
-</svg>
+					            
 					        </a>
 					    </div><!--//app-utility-item-->
 			            
@@ -138,7 +135,6 @@
 				            <a class="dropdown-toggle" id="user-dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false"><img src="assets/images/user.png" alt="user profile"></a>
 				            <ul class="dropdown-menu" aria-labelledby="user-dropdown-toggle">
 								<li><a class="dropdown-item" href="account.php">Account</a></li>
-								<li><a class="dropdown-item" href="settings.php">Settings</a></li>
 								<li><hr class="dropdown-divider"></li>
 								<li><a class="dropdown-item" href="login.php">Log Out</a></li>
 							</ul>
@@ -386,7 +382,7 @@
 					    <div class="app-card app-card-doc shadow-sm  h-100">
 						    <div class="app-card-thumb-holder p-3">
 							    <div class="app-card-thumb">
-	                                <img class="thumb-image" src="assets/images/doc-thumb-1.jpg" alt="">
+	                                <img class="thumb-image" src="assets/images/haven.png" alt="">
 	                            </div>
 	                             <a class="app-card-link-mask" href="#file-link"></a>
 						    </div>
@@ -395,16 +391,13 @@
 							    <h4 class="app-doc-title truncate mb-0"><a href="#file-link">HAVEN</a></h4>
 							    <div class="app-doc-meta">
 								    <ul class="list-unstyled mb-0">
-									    <li><span class="text-muted">Type:</span> Image</li>
-									    <li><span class="text-muted">Size:</span> 8.2MB</li>
-									    <li><span class="text-muted">Edited:</span> 2 days ago</li>
 								    </ul>
 							    </div><!--//app-doc-meta-->
 							    
 							    <div class="app-card-actions">
 								    <div class="dropdown">
 									    <div class="dropdown-toggle no-toggle-arrow" data-bs-toggle="dropdown" aria-expanded="false">
-										    <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-three-dots-vertical" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+										    
 			  <path fill-rule="evenodd" d="M9.5 13a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0zm0-5a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0zm0-5a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0z"/>
 			</svg>
 									    </div><!--//dropdown-toggle-->
@@ -434,11 +427,12 @@
 						</div><!--//app-card-->
 				    </div><!--//col-->
 				    <div class="col-6 col-md-4 col-xl-3 col-xxl-2">
-					    <div class="app-card app-card-doc shadow-sm h-100">
+					    <div class="app-card app-card-doc">
 						    <div class="app-card-thumb-holder p-3">
-							    <span class="icon-holder">
-	                                <i class="fas fa-	-pdf pdf-file"></i>
-	                            </span>
+						    	<div class="app-card-thumb">
+							    
+	                                <img class="thumb-image" src="assets/images/icebox.png" alt="">
+	                            </div>
 	                             <a class="app-card-link-mask" href="#file-link"></a>
 						    </div>
 						    <div class="app-card-body p-3 has-card-actions">
@@ -446,18 +440,13 @@
 							    <h4 class="app-doc-title truncate mb-0"><a href="#file-link">ICE BOX</a></h4>
 							    <div class="app-doc-meta">
 								    <ul class="list-unstyled mb-0">
-									    <li><span class="text-muted">Type:</span> PDF</li>
-									    <li><span class="text-muted">Size:</span> 3MB</li>
-									    <li><span class="text-muted">Opened:</span> 3 days ago</li>
 								    </ul>
 							    </div><!--//app-doc-meta-->
 							    
 							    <div class="app-card-actions">
 								    <div class="dropdown">
 									    <div class="dropdown-toggle no-toggle-arrow" data-bs-toggle="dropdown" aria-expanded="false">
-										    <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-three-dots-vertical" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-			  <path fill-rule="evenodd" d="M9.5 13a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0zm0-5a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0zm0-5a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0z"/>
-			</svg>
+										    
 									    </div><!--//dropdown-toggle-->
 									    <ul class="dropdown-menu">
 										    <li><a class="dropdown-item" href="#"><svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-eye me-2" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
@@ -487,8 +476,9 @@
 				    <div class="col-6 col-md-4 col-xl-3 col-xxl-2">
 					    <div class="app-card app-card-doc shadow-sm h-100">
 						    <div class="app-card-thumb-holder p-3">
-							    <span class="icon-holder">
-	                                <i class="fas fa-file-excel excel-file"></i>
+								<div class="app-card-thumb">
+	                                <img class="thumb-image" src="assets/images/bind.png" alt="">
+	                            </div>
 	                            </span>
 	                             <a class="app-card-link-mask" href="#file-link"></a>
 						    </div>
@@ -497,18 +487,12 @@
 							    <h4 class="app-doc-title truncate mb-0"><a href="#file-link">BIND</a></h4>
 							    <div class="app-doc-meta">
 								    <ul class="list-unstyled mb-0">
-									    <li><span class="text-muted">Type:</span> Spreadsheet</li>
-									    <li><span class="text-muted">Size:</span> 64KB</li>
-									    <li><span class="text-muted">Edited:</span> 1 week ago</li>
 								    </ul>
 							    </div><!--//app-doc-meta-->
 							    
 							    <div class="app-card-actions">
 								    <div class="dropdown">
 									    <div class="dropdown-toggle no-toggle-arrow" data-bs-toggle="dropdown" aria-expanded="false">
-										    <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-three-dots-vertical" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-			  <path fill-rule="evenodd" d="M9.5 13a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0zm0-5a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0zm0-5a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0z"/>
-			</svg>
 									    </div><!--//dropdown-toggle-->
 									    <ul class="dropdown-menu">
 										    <li><a class="dropdown-item" href="#"><svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-eye me-2" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
@@ -538,9 +522,9 @@
 				    <div class="col-6 col-md-4 col-xl-3 col-xxl-2">
 					    <div class="app-card app-card-doc shadow-sm h-100">
 						    <div class="app-card-thumb-holder p-3">
-							    <span class="icon-holder">
-	                                <i class="fas fa-file-alt text-file"></i>
-	                            </span>
+							<div class="app-card-thumb">
+	                                <img class="thumb-image" src="assets/images/split.png" alt="">
+	                            </div>
 	                             <a class="app-card-link-mask" href="#file-link"></a>
 						    </div>
 						    <div class="app-card-body p-3 has-card-actions">
@@ -548,18 +532,12 @@
 							    <h4 class="app-doc-title truncate mb-0"><a href="#file-link">SPLIT</a></h4>
 							    <div class="app-doc-meta">
 								    <ul class="list-unstyled mb-0">
-									    <li><span class="text-muted">Type:</span> Text</li>
-									    <li><span class="text-muted">Size:</span> 121KB</li>
-									    <li><span class="text-muted">Edited:</span> 2 weeks ago</li>
 								    </ul>
 							    </div><!--//app-doc-meta-->
 							    
 							    <div class="app-card-actions">
 								    <div class="dropdown">
 									    <div class="dropdown-toggle no-toggle-arrow" data-bs-toggle="dropdown" aria-expanded="false">
-										    <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-three-dots-vertical" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-			  <path fill-rule="evenodd" d="M9.5 13a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0zm0-5a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0zm0-5a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0z"/>
-			</svg>
 									    </div><!--//dropdown-toggle-->
 									    <ul class="dropdown-menu">
 										    <li><a class="dropdown-item" href="#"><svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-eye me-2" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
@@ -589,9 +567,9 @@
 				    <div class="col-6 col-md-4 col-xl-3 col-xxl-2">
 					    <div class="app-card app-card-doc shadow-sm h-100">
 						    <div class="app-card-thumb-holder p-3">
-							    <span class="icon-holder">
-	                                <i class="fas fa-file-video video-file"></i>
-	                            </span>
+						    	<div class="app-card-thumb">
+	                                <img class="thumb-image" src="assets/images/lotus.png" alt="">
+	                            </div>
 	                             <a class="app-card-link-mask" href="#file-link"></a>
 						    </div>
 						    <div class="app-card-body p-3 has-card-actions">
@@ -599,18 +577,12 @@
 							    <h4 class="app-doc-title truncate mb-0"><a href="#file-link">LOTUS</a></h4>
 							    <div class="app-doc-meta">
 								    <ul class="list-unstyled mb-0">
-									    <li><span class="text-muted">Type:</span> Video</li>
-									    <li><span class="text-muted">Size:</span> 36MB</li>
-									    <li><span class="text-muted">Edited:</span> 2 weeks ago</li>
 								    </ul>
 							    </div><!--//app-doc-meta-->
 							    
 							    <div class="app-card-actions">
 								    <div class="dropdown">
 									    <div class="dropdown-toggle no-toggle-arrow" data-bs-toggle="dropdown" aria-expanded="false">
-										    <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-three-dots-vertical" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-			  <path fill-rule="evenodd" d="M9.5 13a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0zm0-5a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0zm0-5a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0z"/>
-			</svg>
 									    </div><!--//dropdown-toggle-->
 									    <ul class="dropdown-menu">
 										    <li><a class="dropdown-item" href="#"><svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-eye me-2" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
@@ -640,9 +612,9 @@
 				    <div class="col-6 col-md-4 col-xl-3 col-xxl-2">
 					    <div class="app-card app-card-doc shadow-sm h-100">
 						    <div class="app-card-thumb-holder p-3">
-							    <span class="icon-holder">
-	                                <i class="fas fa-file-archive zip-file"></i>
-	                            </span>
+							<div class="app-card-thumb">
+	                                <img class="thumb-image" src="assets/images/sunset.png" alt="">
+	                            </div>
 	                             <a class="app-card-link-mask" href="#file-link"></a>
 						    </div>
 						    <div class="app-card-body p-3 has-card-actions">
@@ -650,18 +622,12 @@
 							    <h4 class="app-doc-title truncate mb-0"><a href="#file-link">SUNSET</a></h4>
 							    <div class="app-doc-meta">
 								    <ul class="list-unstyled mb-0">
-									    <li><span class="text-muted">Type:</span> Zip</li>
-									    <li><span class="text-muted">Size:</span> 7MB</li>	
-									    <li><span class="text-muted">Edited:</span> 3 weeks ago</li>
 								    </ul>
 							    </div><!--//app-doc-meta-->
 							    
 							    <div class="app-card-actions">
 								    <div class="dropdown">
 									    <div class="dropdown-toggle no-toggle-arrow" data-bs-toggle="dropdown" aria-expanded="false">
-										    <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-three-dots-vertical" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-			  <path fill-rule="evenodd" d="M9.5 13a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0zm0-5a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0zm0-5a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0z"/>
-			</svg>
 									    </div><!--//dropdown-toggle-->
 									    <ul class="dropdown-menu">
 										    <li><a class="dropdown-item" href="#"><svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-eye me-2" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
@@ -691,9 +657,9 @@
 				    <div class="col-6 col-md-4 col-xl-3 col-xxl-2">
 					    <div class="app-card app-card-doc shadow-sm h-100">
 						    <div class="app-card-thumb-holder p-3">
-							    <span class="icon-holder">
-	                                <i class="fas fa-file-powerpoint ppt-file"></i>
-	                            </span>
+							<div class="app-card-thumb">
+	                                <img class="thumb-image" src="assets/images/fracture.png" alt="">
+	                            </div>
 	                             <a class="app-card-link-mask" href="#file-link"></a>
 						    </div>
 						    <div class="app-card-body p-3 has-card-actions">
@@ -701,18 +667,12 @@
 							    <h4 class="app-doc-title truncate mb-0"><a href="#file-link">FRACTURE</a></h4>
 							    <div class="app-doc-meta">
 								    <ul class="list-unstyled mb-0">
-									    <li><span class="text-muted">Type:</span> PPT</li>
-									    <li><span class="text-muted">Size:</span> 5.3MB</li>
-									    <li><span class="text-muted">Edited:</span> 3 weeks ago</li>
 								    </ul>
 							    </div><!--//app-doc-meta-->
 							    
 							    <div class="app-card-actions">
 								    <div class="dropdown">
 									    <div class="dropdown-toggle no-toggle-arrow" data-bs-toggle="dropdown" aria-expanded="false">
-										    <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-three-dots-vertical" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-			  <path fill-rule="evenodd" d="M9.5 13a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0zm0-5a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0zm0-5a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0z"/>
-			</svg>
 									    </div><!--//dropdown-toggle-->
 									    <ul class="dropdown-menu">
 										    <li><a class="dropdown-item" href="#"><svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-eye me-2" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
@@ -742,9 +702,9 @@
 				    <div class="col-6 col-md-4 col-xl-3 col-xxl-2">
 					    <div class="app-card app-card-doc shadow-sm h-100">
 						    <div class="app-card-thumb-holder p-3">
-							    <span class="icon-holder">
-	                                <i class="fas fa-file-excel excel-file"></i>
-	                            </span>
+							<div class="app-card-thumb">
+	                                <img class="thumb-image" src="assets/images/breeze.png" alt="">
+	                            </div>
 	                             <a class="app-card-link-mask" href="#file-link"></a>
 						    </div>
 						    <div class="app-card-body p-3 has-card-actions">
@@ -752,18 +712,12 @@
 							    <h4 class="app-doc-title truncate mb-0"><a href="#file-link">BREEZE</a></h4>
 							    <div class="app-doc-meta">
 								    <ul class="list-unstyled mb-0">
-									    <li><span class="text-muted">Type:</span> Spreadsheet</li>
-									    <li><span class="text-muted">Size:</span> 26KB</li>
-									    <li><span class="text-muted">Edited:</span> 1 month ago</li>
 								    </ul>
 							    </div><!--//app-doc-meta-->
 							    
 							    <div class="app-card-actions">
 								    <div class="dropdown">
 									    <div class="dropdown-toggle no-toggle-arrow" data-bs-toggle="dropdown" aria-expanded="false">
-										    <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-three-dots-vertical" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-			  <path fill-rule="evenodd" d="M9.5 13a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0zm0-5a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0zm0-5a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0z"/>
-			</svg>
 									    </div><!--//dropdown-toggle-->
 									    <ul class="dropdown-menu">
 										    <li><a class="dropdown-item" href="#"><svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-eye me-2" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
@@ -793,9 +747,9 @@
 				    <div class="col-6 col-md-4 col-xl-3 col-xxl-2">
 					    <div class="app-card app-card-doc shadow-sm h-100">
 						    <div class="app-card-thumb-holder p-3">
-							    <span class="icon-holder">
-	                                <i class="fas fa-file-alt text-file"></i>
-	                            </span>
+							<div class="app-card-thumb">
+	                                <img class="thumb-image" src="assets/images/pearl.png" alt="">
+	                            </div>
 	                             <a class="app-card-link-mask" href="#file-link"></a>
 						    </div>
 						    <div class="app-card-body p-3 has-card-actions">
@@ -803,19 +757,13 @@
 							    <h4 class="app-doc-title truncate mb-0"><a href="#file-link">PEARL</a></h4>
 							    <div class="app-doc-meta">
 								    <ul class="list-unstyled mb-0">
-									    <li><span class="text-muted">Type:</span> Text</li>
-									    <li><span class="text-muted">Size:</span> 45KB</li>
-									    <li><span class="text-muted">Edited:</span> 1 month ago</li>
 								    </ul>
 							    </div><!--//app-doc-meta-->
 							    
 							    <div class="app-card-actions">
 								    <div class="dropdown">
 									    <div class="dropdown-toggle no-toggle-arrow" data-bs-toggle="dropdown" aria-expanded="false">
-										    <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-three-dots-vertical" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-			  <path fill-rule="evenodd" d="M9.5 13a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0zm0-5a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0zm0-5a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0z"/>
-			</svg>
-									    </div><!--//dropdown-toggle-->
+					    </div><!--//dropdown-toggle-->
 									    <ul class="dropdown-menu">
 										    <li><a class="dropdown-item" href="#"><svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-eye me-2" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
 	  <path fill-rule="evenodd" d="M16 8s-3-5.5-8-5.5S0 8 0 8s3 5.5 8 5.5S16 8 16 8zM1.173 8a13.134 13.134 0 0 0 1.66 2.043C4.12 11.332 5.88 12.5 8 12.5c2.12 0 3.879-1.168 5.168-2.457A13.134 13.134 0 0 0 14.828 8a13.133 13.133 0 0 0-1.66-2.043C11.879 4.668 10.119 3.5 8 3.5c-2.12 0-3.879 1.168-5.168 2.457A13.133 13.133 0 0 0 1.172 8z"/>
@@ -845,7 +793,7 @@
 					    <div class="app-card app-card-doc shadow-sm  h-100">
 						    <div class="app-card-thumb-holder p-3">
 							    <div class="app-card-thumb">
-	                                <img class="thumb-image" src="assets/images/doc-thumb-2.jpg" alt="">
+	                                <img class="thumb-image" src="assets/images/piazza.png" alt="">
 	                            </div>
 	                             <a class="app-card-link-mask" href="#file-link"></a>
 						    </div>
@@ -854,18 +802,13 @@
 							    <h4 class="app-doc-title truncate mb-0"><a href="#file-link">PIAZZA</a></h4>
 							    <div class="app-doc-meta">
 								    <ul class="list-unstyled mb-0">
-									    <li><span class="text-muted">Type:</span> Image</li>
-									    <li><span class="text-muted">Size:</span> 7.1MB</li>
-									    <li><span class="text-muted">Edited:</span> 2 months ago</li>
 								    </ul>
 							    </div><!--//app-doc-meta-->
 							    
 							    <div class="app-card-actions">
 								    <div class="dropdown">
 									    <div class="dropdown-toggle no-toggle-arrow" data-bs-toggle="dropdown" aria-expanded="false">
-										    <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-three-dots-vertical" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-			  <path fill-rule="evenodd" d="M9.5 13a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0zm0-5a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0zm0-5a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0z"/>
-			</svg>
+
 									    </div><!--//dropdown-toggle-->
 									    <ul class="dropdown-menu">
 										    <li><a class="dropdown-item" href="#"><svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-eye me-2" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
@@ -895,9 +838,9 @@
 				    <div class="col-6 col-md-4 col-xl-3 col-xxl-2">
 					    <div class="app-card app-card-doc shadow-sm h-100">
 						    <div class="app-card-thumb-holder p-3">
-							    <span class="icon-holder">
-	                                <i class="fas fa-file-pdf pdf-file"></i>
-	                            </span>
+							<div class="app-card-thumb">
+	                                <img class="thumb-image" src="assets/images/district.png" alt="">
+	                            </div>
 	                             <a class="app-card-link-mask" href="#file-link"></a>
 						    </div>
 						    <div class="app-card-body p-3 has-card-actions">
@@ -905,18 +848,12 @@
 							    <h4 class="app-doc-title truncate mb-0"><a href="#file-link">DISTRICT</a></h4>
 							    <div class="app-doc-meta">
 								    <ul class="list-unstyled mb-0">
-									    <li><span class="text-muted">Type:</span> PDF</li>
-									    <li><span class="text-muted">Size:</span> 2.5MB</li>
-									    <li><span class="text-muted">Opened:</span> 3 months ago</li>
 								    </ul>
 							    </div><!--//app-doc-meta-->
 							    
 							    <div class="app-card-actions">
 								    <div class="dropdown">
 									    <div class="dropdown-toggle no-toggle-arrow" data-bs-toggle="dropdown" aria-expanded="false">
-										    <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-three-dots-vertical" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-			  <path fill-rule="evenodd" d="M9.5 13a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0zm0-5a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0zm0-5a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0z"/>
-			</svg>
 									    </div><!--//dropdown-toggle-->
 									    <ul class="dropdown-menu">
 										    <li><a class="dropdown-item" href="#"><svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-eye me-2" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
