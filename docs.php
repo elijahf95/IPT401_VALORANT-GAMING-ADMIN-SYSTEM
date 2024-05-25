@@ -314,7 +314,11 @@
 		    <div class="container-xl">
 			    <div class="row g-3 mb-4 align-items-center justify-content-between">
 				    <div class="col-auto">
+<<<<<<< HEAD
 			            <h1 class="app-page-title mb-0">VALORANT Maps</h1>
+=======
+			            <h1 class="app-page-title mb-0">Maps</h1>
+>>>>>>> 0f36db7a8266bfa08687fa32d035cbf78bbd9914
 				    </div>
 				    <div class="col-auto">
 					     <div class="page-utilities">
