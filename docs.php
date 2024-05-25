@@ -314,7 +314,7 @@
 		    <div class="container-xl">
 			    <div class="row g-3 mb-4 align-items-center justify-content-between">
 				    <div class="col-auto">
-			            <h1 class="app-page-title mb-0">My Docs</h1>
+			            <h1 class="app-page-title mb-0">VALORANT Maps</h1>
 				    </div>
 				    <div class="col-auto">
 					     <div class="page-utilities">
@@ -365,7 +365,7 @@
 						    </div>
 						    <div class="app-card-body p-3 has-card-actions">
 							    
-							    <h4 class="app-doc-title truncate mb-0"><a href="#file-link">Doc lorem ipsum dolor sit amet</a></h4>
+							    <h4 class="app-doc-title truncate mb-0"><a href="#file-link">ASCENT</a></h4>
 							    <div class="app-doc-meta">
 								    <ul class="list-unstyled mb-0">
 									    <li><span class="text-muted">Type:</span> Text</li>
@@ -416,7 +416,7 @@
 						    </div>
 						    <div class="app-card-body p-3 has-card-actions">
 							    
-							    <h4 class="app-doc-title truncate mb-0"><a href="#file-link">Image lorem ipsum dolor sit amet</a></h4>
+							    <h4 class="app-doc-title truncate mb-0"><a href="#file-link">HAVEN</a></h4>
 							    <div class="app-doc-meta">
 								    <ul class="list-unstyled mb-0">
 									    <li><span class="text-muted">Type:</span> Image</li>
@@ -467,7 +467,7 @@
 						    </div>
 						    <div class="app-card-body p-3 has-card-actions">
 							    
-							    <h4 class="app-doc-title truncate mb-0"><a href="#file-link">Pellentesque fringilla eleifend</a></h4>
+							    <h4 class="app-doc-title truncate mb-0"><a href="#file-link">ICE BOX</a></h4>
 							    <div class="app-doc-meta">
 								    <ul class="list-unstyled mb-0">
 									    <li><span class="text-muted">Type:</span> PDF</li>
@@ -518,7 +518,7 @@
 						    </div>
 						    <div class="app-card-body p-3 has-card-actions">
 							    
-							    <h4 class="app-doc-title truncate mb-0"><a href="#file-link">Curabitur ac purus venenatis</a></h4>
+							    <h4 class="app-doc-title truncate mb-0"><a href="#file-link">BIND</a></h4>
 							    <div class="app-doc-meta">
 								    <ul class="list-unstyled mb-0">
 									    <li><span class="text-muted">Type:</span> Spreadsheet</li>
@@ -569,7 +569,7 @@
 						    </div>
 						    <div class="app-card-body p-3 has-card-actions">
 							    
-							    <h4 class="app-doc-title truncate mb-0"><a href="#file-link">Sed eleifend non libero congue fringilla</a></h4>
+							    <h4 class="app-doc-title truncate mb-0"><a href="#file-link">SPLIT</a></h4>
 							    <div class="app-doc-meta">
 								    <ul class="list-unstyled mb-0">
 									    <li><span class="text-muted">Type:</span> Text</li>
@@ -620,7 +620,7 @@
 						    </div>
 						    <div class="app-card-body p-3 has-card-actions">
 							    
-							    <h4 class="app-doc-title truncate mb-0"><a href="#file-link">Duis venenatis mattis neque</a></h4>
+							    <h4 class="app-doc-title truncate mb-0"><a href="#file-link">LOTUS</a></h4>
 							    <div class="app-doc-meta">
 								    <ul class="list-unstyled mb-0">
 									    <li><span class="text-muted">Type:</span> Video</li>
@@ -671,11 +671,11 @@
 						    </div>
 						    <div class="app-card-body p-3 has-card-actions">
 							    
-							    <h4 class="app-doc-title truncate mb-0"><a href="#file-link">Nullam ornare urna sed</a></h4>
+							    <h4 class="app-doc-title truncate mb-0"><a href="#file-link">SUNSET</a></h4>
 							    <div class="app-doc-meta">
 								    <ul class="list-unstyled mb-0">
 									    <li><span class="text-muted">Type:</span> Zip</li>
-									    <li><span class="text-muted">Size:</span> 7MB</li>
+									    <li><span class="text-muted">Size:</span> 7MB</li>	
 									    <li><span class="text-muted">Edited:</span> 3 weeks ago</li>
 								    </ul>
 							    </div><!--//app-doc-meta-->
@@ -722,7 +722,7 @@
 						    </div>
 						    <div class="app-card-body p-3 has-card-actions">
 							    
-							    <h4 class="app-doc-title truncate mb-0"><a href="#file-link">Aenean scelerisque </a></h4>
+							    <h4 class="app-doc-title truncate mb-0"><a href="#file-link">FRACTURE</a></h4>
 							    <div class="app-doc-meta">
 								    <ul class="list-unstyled mb-0">
 									    <li><span class="text-muted">Type:</span> PPT</li>
@@ -773,7 +773,7 @@
 						    </div>
 						    <div class="app-card-body p-3 has-card-actions">
 							    
-							    <h4 class="app-doc-title truncate mb-0"><a href="#file-link">Ut viverra leo sapien</a></h4>
+							    <h4 class="app-doc-title truncate mb-0"><a href="#file-link">BREEZE</a></h4>
 							    <div class="app-doc-meta">
 								    <ul class="list-unstyled mb-0">
 									    <li><span class="text-muted">Type:</span> Spreadsheet</li>
@@ -824,7 +824,7 @@
 						    </div>
 						    <div class="app-card-body p-3 has-card-actions">
 							    
-							    <h4 class="app-doc-title truncate mb-0"><a href="#file-link">Sed eleifend non libero congue fringilla</a></h4>
+							    <h4 class="app-doc-title truncate mb-0"><a href="#file-link">PEARL</a></h4>
 							    <div class="app-doc-meta">
 								    <ul class="list-unstyled mb-0">
 									    <li><span class="text-muted">Type:</span> Text</li>
@@ -875,7 +875,7 @@
 						    </div>
 						    <div class="app-card-body p-3 has-card-actions">
 							    
-							    <h4 class="app-doc-title truncate mb-0"><a href="#file-link">Image condimentum</a></h4>
+							    <h4 class="app-doc-title truncate mb-0"><a href="#file-link">PIAZZA</a></h4>
 							    <div class="app-doc-meta">
 								    <ul class="list-unstyled mb-0">
 									    <li><span class="text-muted">Type:</span> Image</li>
@@ -926,7 +926,7 @@
 						    </div>
 						    <div class="app-card-body p-3 has-card-actions">
 							    
-							    <h4 class="app-doc-title truncate mb-0"><a href="#file-link">Interdum semper</a></h4>
+							    <h4 class="app-doc-title truncate mb-0"><a href="#file-link">DISTRICT</a></h4>
 							    <div class="app-doc-meta">
 								    <ul class="list-unstyled mb-0">
 									    <li><span class="text-muted">Type:</span> PDF</li>
