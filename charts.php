@@ -207,7 +207,7 @@
 	  <path d="M6 0h7a2 2 0 0 1 2 2v10a2 2 0 0 1-2 2v-1a1 1 0 0 0 1-1V2a1 1 0 0 0-1-1H6a1 1 0 0 0-1 1H4a2 2 0 0 1 2-2z"/>
 	</svg>
 						         </span>
-		                         <span class="nav-link-text">Pages</span>
+		                         <span class="nav-link-text">Team Information</span>
 		                         <span class="submenu-arrow">
 		                             <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-chevron-down" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
 	  <path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/>
@@ -216,7 +216,7 @@
 					        </a><!--//nav-link-->
 					        <div id="submenu-1" class="collapse submenu submenu-1" data-bs-parent="#menu-accordion">
 						        <ul class="submenu-list list-unstyled">
-							        <li class="submenu-item"><a class="submenu-link" href="account.php">Account</a></li>
+							        <li class="submenu-item"><a class="submenu-link" href="account.php">Create</a></li>
 							        
 						        </ul>
 					        </div>
@@ -239,8 +239,7 @@
 					        </a><!--//nav-link-->
 					        <div id="submenu-2" class="collapse submenu submenu-2" data-bs-parent="#menu-accordion">
 						        <ul class="submenu-list list-unstyled">
-							        <li class="submenu-item"><a class="submenu-link" href="login.php">Login</a></li>
-							        <li class="submenu-item"><a class="submenu-link" href="signup.php">Signup</a></li>
+							        <li class="submenu-item"><a class="submenu-link" href="signup.php">Create another account</a></li>
 							        <li class="submenu-item"><a class="submenu-link" href="reset-password.php">Reset password</a></li>
 						        </ul>
 					        </div>
@@ -309,7 +308,7 @@
 		            <div class="col-12 col-lg-6">		        
 				        <div class="app-card app-card-chart h-100 shadow-sm">
 					        <div class="app-card-header p-3 border-0">
-						        <h4 class="app-card-title">Bar Chart Demo</h4>
+						        <h4 class="app-card-title">Most Played Agents</h4>
 					        </div><!--//app-card-header-->
 					        <div class="app-card-body p-4">					   
 						        <div class="chart-container">
