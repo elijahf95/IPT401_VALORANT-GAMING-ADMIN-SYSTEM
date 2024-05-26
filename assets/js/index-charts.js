@@ -137,7 +137,7 @@ var barChartConfig = {
 	type: 'bar',
 
 	data: {
-		labels: ['Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat', 'Sun'],
+		labels: ['Jett', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat', 'Sun'],
 		datasets: [{
 			label: 'Orders',
 			backgroundColor: window.chartColors.green,
@@ -165,7 +165,7 @@ var barChartConfig = {
 		},
 		title: {
 			display: true,
-			text: 'Chart.js Bar Chart Example'
+			text: 'Agents'
 		},
 		tooltips: {
 			mode: 'index',
