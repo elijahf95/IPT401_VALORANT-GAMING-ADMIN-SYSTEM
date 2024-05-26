@@ -24,8 +24,8 @@ var lineChartConfig = {
 		datasets: [{
 			label: 'Current week',
 			fill: false,
-			backgroundColor: window.chartColors.green,
-			borderColor: window.chartColors.green,
+			backgroundColor: '#a83c49',
+			borderColor: '#a83c49',
 			data: [
 				randomDataPoint(),
 				randomDataPoint(),
@@ -140,8 +140,8 @@ var barChartConfig = {
 		labels: ['Sage', 'Gekko', 'Sova', 'Reyna', 'Raze', 'Omen', 'Jett'],
 		datasets: [{
 			label: 'Plays',
-			backgroundColor: window.chartColors.green,
-			borderColor: window.chartColors.green,
+			backgroundColor: '#a83c49',
+			borderColor: '#a83c49',
 			borderWidth: 1,
 			maxBarThickness: 16,
 			

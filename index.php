@@ -307,7 +307,7 @@
 			    
 			    <h1 class="app-page-title">VALORANT</h1>
 			    
-			    <div class="app-card alert alert-dismissible shadow-sm mb-4 border-left-decoration" role="alert">
+			    <div class="app-card alert alert-dismissible shadow-sm mb-4 border-left-decoration" role="alert" style="border-left: 4px solid #a83c49;">
 				    <div class="inner">
 					    <div class="app-card-body p-3 p-lg-4">
 						    <h3 class="mb-3">Welcome, Gamer!</h3>
@@ -316,12 +316,17 @@
 							        
 							        <div>Portal is a free to download VALORANT GAME! Click to Download the game!</div>
 							    </div><!--//col-->
-							    <div class="col-12 col-lg-3">
-								    <a class="btn app-btn-primary" href="https://playvalorant.com/en-sg//"><svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-file-earmark-arrow-down me-2" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-  <path d="M4 0h5.5v1H4a1 1 0 0 0-1 1v12a1 1 0 0 0 1 1h8a1 1 0 0 0 1-1V4.5h1V14a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V2a2 2 0 0 1 2-2z"/>
-  <path d="M9.5 3V0L14 4.5h-3A1.5 1.5 0 0 1 9.5 3z"/>
-  <path fill-rule="evenodd" d="M8 6a.5.5 0 0 1 .5.5v3.793l1.146-1.147a.5.5 0 0 1 .708.708l-2 2a.5.5 0 0 1-.708 0l-2-2a.5.5 0 1 1 .708-.708L7.5 10.293V6.5A.5.5 0 0 1 8 6z"/>
-</svg>CLICK ME!</a>
+<div class="col-12 col-lg-3">
+	<a class="btn app-btn-primary" href="https://playvalorant.com/en-sg/" style="background-color: #a83c49; border-color: #a83c49;">
+		<svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-file-earmark-arrow-down me-2" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+			<path d="M4 0h5.5v1H4a1 1 0 0 0-1 1v12a1 1 0 0 0 1 1h8a1 1 0 0 0 1-1V4.5h1V14a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V2a2 2 0 0 1 2-2z"/>
+			<path d="M9.5 3V0L14 4.5h-3A1.5 1.5 0 0 1 9.5 3z"/>
+			<path fill-rule="evenodd" d="M8 6a.5.5 0 0 1 .5.5v3.793l1.146-1.147a.5.5 0 0 1 .708.708l-2 2a.5.5 0 0 1-.708 0l-2-2a.5.5 0 1 1 .708-.708L7.5 10.293V6.5A.5.5 0 0 1 8 6z"/>
+		</svg>
+		CLICK ME!
+	</a>
+</div>
+
 							    </div><!--//col-->
 						    </div><!--//row-->
 						    <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
@@ -336,7 +341,7 @@
 						    <div class="app-card-body p-3 p-lg-4">
 							    <h4 class="stats-type mb-1">VALORANT Total DOWNLOADS</h4>
 							    <div class="stats-figure">17.02M</div>
-							    <div class="stats-meta text-success">Worldwide
+							    <div class="stats-meta text-danger">Worldwide
 								    
   <path fill-rule="evenodd" d="M8 15a.5.5 0 0 0 .5-.5V2.707l3.146 3.147a.5.5 0 0 0 .708-.708l-4-4a.5.5 0 0 0-.708 0l-4 4a.5.5 0 1 0 .708.708L7.5 2.707V14.5a.5.5 0 0 0 .5.5z"/>
 </svg> </div>
@@ -350,7 +355,7 @@
 						    <div class="app-card-body p-3 p-lg-4">
 							    <h4 class="stats-type mb-1">VALORANT FILE</h4>
 							    <div class="stats-figure">28 GB</div>
-							    <div class="stats-meta text-success"> Total Size
+							    <div class="stats-meta text-danger"> Total Size
 								  
   <path fill-rule="evenodd" d="M8 1a.5.5 0 0 1 .5.5v11.793l3.146-3.147a.5.5 0 0 1 .708.708l-4 4a.5.5 0 0 1-.708 0l-4-4a.5.5 0 0 1 .708-.708L7.5 13.293V1.5A.5.5 0 0 1 8 1z"/>
 </svg></div>
@@ -363,7 +368,7 @@
 						    <div class="app-card-body p-3 p-lg-4">
 							    <h4 class="stats-type mb-1">IN GAME PLAYERS TOTAL EXPENSES</h4>
 							    <div class="stats-figure">7.3M</div>
-							    <div class="stats-meta text-success">Worldwide
+							    <div class="stats-meta text-danger">Worldwide
 								    </div>
 						    </div><!--//app-card-body-->
 						    <a class="app-card-link-mask" href="#"></a>
@@ -374,7 +379,7 @@
 						    <div class="app-card-body p-3 p-lg-4">
 							    <h4 class="stats-type mb-1">Valorant Watch Time</h4>
 							    <div class="stats-figure"> 383.8M Hours</div>
-							    <div class="stats-meta text-success">On Twitch</div>
+							    <div class="stats-meta text-danger">On Twitch</div>
 						    </div><!--//app-card-body-->
 						    <a class="app-card-link-mask" href="#"></a>
 					    </div><!--//app-card-->
@@ -391,7 +396,6 @@
 							        </div><!--//col-->
 							        <div class="col-auto">
 								        <div class="card-header-action">
-									        <a href="charts.html">More charts</a>
 								        </div><!--//card-header-actions-->
 							        </div><!--//col-->
 						        </div><!--//row-->
@@ -420,7 +424,6 @@
 							        </div><!--//col-->
 							        <div class="col-auto">
 								        <div class="card-header-action">
-									        <a href="charts.html">More charts</a>
 								        </div><!--//card-header-actions-->
 							        </div><!--//col-->
 						        </div><!--//row-->

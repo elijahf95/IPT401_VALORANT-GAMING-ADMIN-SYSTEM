@@ -116,19 +116,15 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 							</div>
 							<div class="extra mb-3">
 								<div class="form-check">
-									<input class="form-check-input" type="checkbox" value="" id="RememberPassword">
-									<label class="form-check-label" for="RememberPassword">
-									I agree to Portal's <a href="#" class="app-link">Terms of Service</a> and <a href="#" class="app-link">Privacy Policy</a>.
-									</label>
 								</div>
 							</div><!--//extra-->
 							
 							<div class="text-center">
-								<button type="submit" class="btn app-btn-primary w-100 theme-btn mx-auto">Sign Up</button>
+								<button type="submit" class="btn app-btn-primary w-100 theme-btn mx-auto" style="background-color: #a83c49; border-color: #a83c49;">Sign Up</button>
 							</div>
 						</form><!--//auth-form-->
 						
-						<div class="auth-option text-center pt-5">Already have an account? <a class="text-link" href="login.php" >Log in</a></div>
+						<div class="auth-option text-center pt-5">Already have an account? <a class="text-link" href="login.php" style="color: #a83c49">Log in</a></div>
 					</div><!--//auth-form-container-->	
 			
 	    
