@@ -113,8 +113,8 @@ var barChartConfig = {
 		labels: ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul'],
 		datasets: [{
 			label: 'Dataset 1',
-			backgroundColor: "rgba(117,193,129,0.8)", 
-			hoverBackgroundColor: "rgba(117,193,129,1)",
+			backgroundColor: "rgba(255,0,0,0.0)", 
+			hoverBackgroundColor: "rgba(255,0,0,0)",
 			
 			
 			data: [

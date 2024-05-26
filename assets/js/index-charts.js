@@ -137,9 +137,9 @@ var barChartConfig = {
 	type: 'bar',
 
 	data: {
-		labels: ['Jett', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat', 'Sun'],
+		labels: ['Sage', 'Gekko', 'Sova', 'Reyna', 'Raze', 'Omen', 'Jett'],
 		datasets: [{
-			label: 'Orders',
+			label: 'Plays',
 			backgroundColor: window.chartColors.green,
 			borderColor: window.chartColors.green,
 			borderWidth: 1,
