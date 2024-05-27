@@ -127,16 +127,13 @@
 							</div><!--//dropdown-menu-->					        
 				        </div><!--//app-utility-item-->
 			            <div class="app-utility-item">
-				            <a href="settings.html" title="Settings">
-					            <!--//Bootstrap Icons: https://icons.getbootstrap.com/ -->
-					        </a>
+
 					    </div><!--//app-utility-item-->
 			            
 			            <div class="app-utility-item app-user-dropdown dropdown">
 				            <a class="dropdown-toggle" id="user-dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false"><img src="assets/images/user.png" alt="user profile"></a>
 				            <ul class="dropdown-menu" aria-labelledby="user-dropdown-toggle">
 								<li><a class="dropdown-item" href="account.php">Account</a></li>
-								<li><hr class="dropdown-divider"></li>
 								<li><a class="dropdown-item" href="login.php">Log Out</a></li>
 							</ul>
 			            </div><!--//app-user-dropdown--> 
@@ -145,21 +142,23 @@
 	            </div><!--//app-header-content-->
 	        </div><!--//container-fluid-->
         </div><!--//app-header-inner-->
-        <div id="app-sidepanel" class="app-sidepanel sidepanel-hidden"> 
+<div id="app-sidepanel" class="app-sidepanel"> 
 	        <div id="sidepanel-drop" class="sidepanel-drop"></div>
 	        <div class="sidepanel-inner d-flex flex-column">
 		        <a href="#" id="sidepanel-close" class="sidepanel-close d-xl-none">&times;</a>
-<div class="app-branding">
+		        <div class="app-branding">
 		            <svg height="50pt" viewBox="0 0 1000 150" width="300pt" xmlns="http://www.w3.org/2000/svg">
  <a id="Valorant_logo" href="index.php">
   <path fill="#ff4655" d="m459.10547 14.35156h18.42578l.05859 56.5c0 .72657.58985 1.32422 1.32422 1.32422l10.55078-.00781c.73438 0 1.32422-.58984 1.32422-1.32422l-.0625-56.49219h23.10938c.67969 0 1.0664-.79297.63281-1.32422l-7.91016-9.91015c-.66015-.83203-1.66406-1.3125-2.72265-1.31641h-44.73047c-.73438 0-1.32422.58985-1.32422 1.32422v9.91016c0 .71875.58984 1.3164 1.32422 1.3164m-444.73828 56.50782 54.05469-67.73438c.42578-.53125.04296-1.32422-.63672-1.32422h-13.51563c-1.05859 0-2.0664.48828-2.72656 1.31641l-38.34766 48.04687v-48.04687c0-.73438-.58984-1.32422-1.32031-1.32422h-10.55469c-.73047 0-1.32031.58984-1.32031 1.32422v67.73437c0 .73438.58984 1.32422 1.32031 1.32422h10.32422c1.0586 0 2.0586-.48437 2.72266-1.3164m38.10937 0 18.59375-23.29688 18.59375 23.29688c.66016.83203 1.66797 1.3164 2.73047 1.3164h10.32031c.73438 0 1.32422-.58984 1.32422-1.32422v-67.73437c0-.72656-.58984-1.32422-1.32422-1.32422h-8.65625c-2.12109 0-4.1289.96484-5.45703 2.625l-53.00781 66.42578c-.42578.53125-.04297 1.32422.63672 1.32422h13.51562c1.06641.00781 2.06641-.47656 2.73047-1.30859m38.35938-49.48829v31.20704l-12.45313-15.60157zm301.80859 49.47266-54.05078-67.73437c-.66016-.82813-1.66406-1.3125-2.72266-1.31641h-10.33203c-.73047 0-1.32031.58984-1.32031 1.32422v67.73437c0 .73438.58984 1.32422 1.32031 1.32422h10.32422c1.0586 0 2.06641-.48437 2.72266-1.3164l18.59375-23.29688 18.58984 23.29688c.66406.83203 1.66406 1.3164 2.72656 1.3164h13.51563c.67969 0 1.05859-.79297.63281-1.33203m-42.78906-33.86719-12.45703 15.60938v-31.21485zm-148.74609-36.9375c-20.375 0-36.89063 16.53907-36.89063 36.94532s16.51563 36.94921 36.89063 36.94921c20.3789 0 36.89453-16.54296 36.89453-36.94921.00781-20.40625-16.51563-36.94532-36.89453-36.94532m0 61.33594c-13.08985 0-23.69532-10.92187-23.69532-24.39062s10.60547-24.39844 23.69532-24.39844c13.09375 0 23.69921 10.92187 23.69921 24.39844.00782 13.46875-10.60546 24.39062-23.69921 24.39062m234.3125-58.25781v48.04687l-38.34766-48.05468c-.66406-.82813-1.66406-1.3125-2.72656-1.31641h-10.33594c-.72656 0-1.32031.58984-1.32031 1.32422v32.64062c0 .79297.26562 1.5625.76562 2.1836l10.98047 13.76172c.48438.60546 1.45703.26171 1.45703-.50782v-28.40625l38.35547 48.07032c.66016.83203 1.66406 1.3164 2.72266 1.3164h10.32422c.73046 0 1.32031-.58984 1.32031-1.32422v-67.73437c0-.72656-.58985-1.32422-1.32031-1.32422h-10.55469c-.73047 0-1.32031.59766-1.32031 1.32422m-128.94532 14.67969v-14.67969c0-.73438-.58984-1.32422-1.32031-1.32422h-54.01562c-.73047 0-1.32032.58984-1.32032 1.32422v67.73437c0 .73438.58985 1.32422 1.32032 1.32422h10.55468c.73047 0 1.32032-.58984 1.32032-1.32422v-56.49218h30.26562l-20.42969 25.60937c-.3789.47656-.3789 1.16406 0 1.65234l23.33985 29.2461c.66406.83203 1.66406 1.3164 2.72656 1.3164h13.51562c.67969 0 1.0586-.79296.63282-1.32421l-23.98828-30.05469 16.6289-20.8086c.49219-.63671.76953-1.40625.76953-2.19921m-185.27343 54.3789h31.32031c1.05859 0 2.0664-.48437 2.72265-1.3164l7.91016-9.91797c.42578-.53125.04688-1.32422-.63281-1.32422h-29.44531v-56.5c0-.73438-.58985-1.32422-1.32032-1.32422h-10.55468c-.73047 0-1.32032.58984-1.32032 1.32422v67.73437c0 .72657.59766 1.32422 1.32032 1.32422"/>
  </a>
-</svg><!--//app-branding-->  
+</svg>
+		        </div><!--//app-branding-->  
+		        
 			    <nav id="app-nav-main" class="app-nav app-nav-main flex-grow-1">
 				    <ul class="app-menu list-unstyled accordion" id="menu-accordion">
 					    <li class="nav-item">
 					        <!--//Bootstrap Icons: https://icons.getbootstrap.com/ -->
-					        <a class="nav-link" href="index.php">
+					        <a class="nav-link active" href="index.php">
 						        <span class="nav-icon">
 						        <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-house-door" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
 		  <path fill-rule="evenodd" d="M7.646 1.146a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 .146.354v7a.5.5 0 0 1-.5.5H9.5a.5.5 0 0 1-.5-.5v-4H7v4a.5.5 0 0 1-.5.5H2a.5.5 0 0 1-.5-.5v-7a.5.5 0 0 1 .146-.354l6-6zM2.5 7.707V14H6v-4a.5.5 0 0 1 .5-.5h3a.5.5 0 0 1 .5.5v4h3.5V7.707L8 2.207l-5.5 5.5z"/>
@@ -198,7 +197,7 @@
 					    </li><!--//nav-item-->
 					    <li class="nav-item has-submenu">
 					        <!--//Bootstrap Icons: https://icons.getbootstrap.com/ -->
-					        <a class="nav-link submenu-toggle active" href="#" data-bs-toggle="collapse" data-bs-target="#submenu-1" aria-expanded="true" aria-controls="submenu-1">
+					        <a class="nav-link submenu-toggle" href="#" data-bs-toggle="collapse" data-bs-target="#submenu-1" aria-expanded="false" aria-controls="submenu-1">
 						        <span class="nav-icon">
 						        <!--//Bootstrap Icons: https://icons.getbootstrap.com/ -->
 						        <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-files" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
@@ -213,10 +212,9 @@
 	</svg>
 	                             </span><!--//submenu-arrow-->
 					        </a><!--//nav-link-->
-					        <div id="submenu-1" class="collapse submenu submenu-1 show" data-bs-parent="#menu-accordion">
+					        <div id="submenu-1" class="collapse submenu submenu-1" data-bs-parent="#menu-accordion">
 						        <ul class="submenu-list list-unstyled">
-							        <li class="submenu-item"><a class="submenu-link active" href="account.php">Create</a></li>
-							        
+							        <li class="submenu-item"><a class="submenu-link" href="account.php">Create</a></li>
 						        </ul>
 					        </div>
 					    </li><!--//nav-item-->
@@ -243,7 +241,8 @@
 						        </ul>
 					        </div>
 					    </li><!--//nav-item-->
-					    
+
+					   
 					    <li class="nav-item">
 					        <!--//Bootstrap Icons: https://icons.getbootstrap.com/ -->
 					        <a class="nav-link" href="charts.php">
@@ -255,104 +254,124 @@
 		                         <span class="nav-link-text">Charts</span>
 					        </a><!--//nav-link-->
 					    </li><!--//nav-item-->
+					    
 					    <li class="nav-item">
 					        <!--//Bootstrap Icons: https://icons.getbootstrap.com/ -->
-					        <a class="nav-link" href="help.html">
+					        <a class="nav-link">
 						        <span class="nav-icon">
 						         </span>
 		                         
+					        </a><!--//nav-link-->
+					    </li><!--//nav-item-->					    
+				    </ul><!--//app-menu-->
+			    </nav><!--//app-nav-->
+			    <div class="app-sidepanel-footer">
+				    <nav class="app-nav app-nav-footer">
+					    <ul class="app-menu footer-menu list-unstyled">
+						    <li class="nav-item">
+						        <!--//Bootstrap Icons: https://icons.getbootstrap.com/ -->
+						        <a class="nav-link" href="#">
+							        <span class="nav-icon">
+
+							        </span>
+			                        
+						        </a><!--//nav-link-->
+						    </li><!--//nav-item-->
+						    <li class="nav-item">
+						        <!--//Bootstrap Icons: https://icons.getbootstrap.com/ -->
+						        <a class="nav-link" >
+							        <span class="nav-icon">
+							        </span>
+						        </a><!--//nav-link-->
+						    </li><!--//nav-item-->
+						    
+						        <!--//Bootstrap Icons: https://icons.getbootstrap.com/ -->
+						        <a class="nav-link" >
+							        <span class="nav-icon">						          
+							        </span>		                        
+						        </a><!--//nav-link-->
+						    </li><!--//nav-item-->
+					    </ul><!--//footer-menu-->
+				    </nav>
+			    </div><!--//app-sidepanel-footer-->
+		       
+	        </div><!--//sidepanel-inner-->
+	    </div><!--//app-sidepanel-->
     </header><!--//app-header-->
     
-    <div class="app-wrapper">
-	    
-	    <div class="app-content pt-3 p-md-3 p-lg-4">
-		    <div class="container-xl">
-			    
-			    <h1 class="app-page-title">My Account</h1>
-                <div class="row gy-4">
-	                <div class="col-12 col-lg-6">
-		                <div class="app-card app-card-account shadow-sm d-flex flex-column align-items-start">
-						    <div class="app-card-header p-3 border-bottom-0">
-						        <div class="row align-items-center gx-3">
-							        <div class="col-auto">
-								        <div class="app-icon-holder">
-										    <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-person" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-  <path fill-rule="evenodd" d="M10 5a2 2 0 1 1-4 0 2 2 0 0 1 4 0zM8 8a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm6 5c0 1-1 1-1 1H3s-1 0-1-1 1-4 6-4 6 3 6 4zm-1-.004c-.001-.246-.154-.986-.832-1.664C11.516 10.68 10.289 10 8 10c-2.29 0-3.516.68-4.168 1.332-.678.678-.83 1.418-.832 1.664h10z"/>
-</svg>
-									    </div><!--//icon-holder-->
-						                
-							        </div><!--//col-->
-							        <div class="col-auto">
-								        <h4 class="app-card-title">Profile</h4>
-							        </div><!--//col-->
-						        </div><!--//row-->
-						    </div><!--//app-card-header-->
-						    <div class="app-card-body px-4 w-100">
-							    <div class="item border-bottom py-3">
-								    <div class="row justify-content-between align-items-center">
-									    <div class="col-auto">
-										    <div class="item-label mb-2"><strong>Photo</strong></div>
-										    <div class="item-data"><img class="profile-image" src="assets/images/user.png" alt=""></div>
-									    </div><!--//col-->
-									    <div class="col text-end">
-										    <a class="btn-sm app-btn-secondary" href="#">Change</a>
-									    </div><!--//col-->
-								    </div><!--//row-->
-							    </div><!--//item-->
-							    <div class="item border-bottom py-3">
-								    <div class="row justify-content-between align-items-center">
-									    <div class="col-auto">
-										    <div class="item-label"><strong>Name</strong></div>
-									        <div class="item-data">James Doe</div>
-									    </div><!--//col-->
-									    <div class="col text-end">
-										    <a class="btn-sm app-btn-secondary" href="#">Change</a>
-									    </div><!--//col-->
-								    </div><!--//row-->
-							    </div><!--//item-->
-							    <div class="item border-bottom py-3">
-								    <div class="row justify-content-between align-items-center">
-									    <div class="col-auto">
-										    <div class="item-label"><strong>Email</strong></div>
-									        <div class="item-data">james.doe@website.com</div>
-									    </div><!--//col-->
-									    <div class="col text-end">
-										    <a class="btn-sm app-btn-secondary" href="#">Change</a>
-									    </div><!--//col-->
-								    </div><!--//row-->
-							    </div><!--//item-->
-							    <div class="item border-bottom py-3">
-								    <div class="row justify-content-between align-items-center">
-									    <div class="col-auto">
-										    <div class="item-label"><strong>Website</strong></div>
-									        <div class="item-data">
-										        https://johndoewebsite.com
-									        </div>
-									    </div><!--//col-->
-									    <div class="col text-end">
-										    <a class="btn-sm app-btn-secondary" href="#">Change</a>
-									    </div><!--//col-->
-								    </div><!--//row-->
-							    </div><!--//item-->
-							    <div class="item border-bottom py-3">
-								    <div class="row justify-content-between align-items-center">
-									    <div class="col-auto">
-										    <div class="item-label"><strong>Location</strong></div>
-									        <div class="item-data">
-										        New York
-									        </div>
-									    </div><!--//col-->
-									    <div class="col text-end">
-										    <a class="btn-sm app-btn-secondary" href="#">Change</a>
-									    </div><!--//col-->
-								    </div><!--//row-->
-							    </div><!--//item-->
-						    </div><!--//app-card-body-->
-						    <div class="app-card-footer p-4 mt-auto">
-							   <a class="btn app-btn-secondary" href="#">Manage Profile</a>
-						    </div><!--//app-card-footer-->
-						   
-						</div><!--//app-card-->
+<div class="app-wrapper">
+    <div class="app-content pt-3 p-md-3 p-lg-4">
+        <div class="container-xl">
+            <h1 class="app-page-title">Create Team</h1>
+            <div class="row gy-4">
+                <div class="col-12 col-lg-6">
+                    <div class="app-card app-card-account shadow-sm d-flex flex-column align-items-start">
+                        <div class="app-card-header p-3 border-bottom-0">
+                            <div class="row align-items-center gx-3">
+                                <div class="col-auto">
+                                    <div class="app-icon-holder">
+                                        <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-person" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                            <path fill-rule="evenodd" d="M10 5a2 2 0 1 1-4 0 2 2 0 0 1 4 0zM8 8a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm6 5c0 1-1 1-1 1H3s-1 0-1-1 1-4 6-4 6 3 6 4zm-1-.004c-.001-.246-.154-.986-.832-1.664C11.516 10.68 10.289 10 8 10c-2.29 0-3.516.68-4.168 1.332-.678.678-.83 1.418-.832 1.664h10z"/>
+                                        </svg>
+                                    </div><!--//icon-holder-->
+                                </div><!--//col-->
+                                <div class="col-auto">
+                                    <h4 class="app-card-title">Create Team</h4>
+                                </div><!--//col-->
+                            </div><!--//row-->
+                        </div><!--//app-card-header-->
+                        <div class="app-card-body px-4 w-100">
+                            <form>
+                                <div class="item border-bottom py-3">
+                                    <div class="row justify-content-between align-items-center">
+                                        <div class="col-auto">
+                                            <div class="item-label mb-2"><strong>Team Logo</strong></div>
+                                            <input type="file" class="form-control-file" id="teamLogo">
+                                        </div><!--//col-->
+                                    </div><!--//row-->
+                                </div><!--//item-->
+                                <div class="item border-bottom py-3">
+                                    <div class="row justify-content-between align-items-center">
+                                        <div class="col-auto">
+                                            <div class="item-label"><strong>Team Name</strong></div>
+                                            <input type="text" class="form-control" id="teamName" placeholder="Enter team name">
+                                        </div><!--//col-->
+                                    </div><!--//row-->
+                                </div><!--//item-->
+                                <div class="item border-bottom py-3">
+                                    <div class="row justify-content-between align-items-center">
+                                        <div class="col-auto">
+                                            <div class="item-label"><strong>Team Leader Name</strong></div>
+                                            <input type="text" class="form-control" id="teamLeaderName" placeholder="Enter team leader name">
+                                        </div><!--//col-->
+                                    </div><!--//row-->
+                                </div><!--//item-->
+                                <div class="item border-bottom py-3">
+                                    <div class="row justify-content-between align-items-center">
+                                        <div class="col-auto">
+                                            <div class="item-label"><strong>Region Server</strong></div>
+                                            <select class="form-select" id="regionServer">
+                                                <option value="PH">PH</option>
+                                                <option value="NA">NA</option>
+                                                <option value="EUW">EUW</option>
+                                                <option value="JP">JP</option>
+                                                <option value="KR">KR</option>
+                                            </select>
+                                        </div><!--//col-->
+                                    </div><!--//row-->
+                                </div><!--//item-->
+                                <div class="app-card-footer p-4 mt-auto">
+                                    <button type="submit" class="btn app-btn-primary">Create Team</button>
+                                </div><!--//app-card-footer-->
+                          </form>
+                        </div><!--//app-card-body-->
+                    </div><!--//app-card-->
+                </div><!--//col-->
+            </div><!--//row-->
+        </div><!--//container-xl-->
+    </div><!--//app-content-->
+</div><!--//app-wrapper-->
+
 	                </div><!--//col-->
 	                <div class="col-12 col-lg-6">
 		                <div class="app-card app-card-account shadow-sm d-flex flex-column align-items-start">

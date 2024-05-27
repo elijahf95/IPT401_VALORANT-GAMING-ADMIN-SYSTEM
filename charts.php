@@ -145,22 +145,23 @@
 	            </div><!--//app-header-content-->
 	        </div><!--//container-fluid-->
         </div><!--//app-header-inner-->
-        <div id="app-sidepanel" class="app-sidepanel"> 
+<div id="app-sidepanel" class="app-sidepanel"> 
 	        <div id="sidepanel-drop" class="sidepanel-drop"></div>
 	        <div class="sidepanel-inner d-flex flex-column">
 		        <a href="#" id="sidepanel-close" class="sidepanel-close d-xl-none">&times;</a>
-<div class="app-branding">
+		        <div class="app-branding">
 		            <svg height="50pt" viewBox="0 0 1000 150" width="300pt" xmlns="http://www.w3.org/2000/svg">
  <a id="Valorant_logo" href="index.php">
   <path fill="#ff4655" d="m459.10547 14.35156h18.42578l.05859 56.5c0 .72657.58985 1.32422 1.32422 1.32422l10.55078-.00781c.73438 0 1.32422-.58984 1.32422-1.32422l-.0625-56.49219h23.10938c.67969 0 1.0664-.79297.63281-1.32422l-7.91016-9.91015c-.66015-.83203-1.66406-1.3125-2.72265-1.31641h-44.73047c-.73438 0-1.32422.58985-1.32422 1.32422v9.91016c0 .71875.58984 1.3164 1.32422 1.3164m-444.73828 56.50782 54.05469-67.73438c.42578-.53125.04296-1.32422-.63672-1.32422h-13.51563c-1.05859 0-2.0664.48828-2.72656 1.31641l-38.34766 48.04687v-48.04687c0-.73438-.58984-1.32422-1.32031-1.32422h-10.55469c-.73047 0-1.32031.58984-1.32031 1.32422v67.73437c0 .73438.58984 1.32422 1.32031 1.32422h10.32422c1.0586 0 2.0586-.48437 2.72266-1.3164m38.10937 0 18.59375-23.29688 18.59375 23.29688c.66016.83203 1.66797 1.3164 2.73047 1.3164h10.32031c.73438 0 1.32422-.58984 1.32422-1.32422v-67.73437c0-.72656-.58984-1.32422-1.32422-1.32422h-8.65625c-2.12109 0-4.1289.96484-5.45703 2.625l-53.00781 66.42578c-.42578.53125-.04297 1.32422.63672 1.32422h13.51562c1.06641.00781 2.06641-.47656 2.73047-1.30859m38.35938-49.48829v31.20704l-12.45313-15.60157zm301.80859 49.47266-54.05078-67.73437c-.66016-.82813-1.66406-1.3125-2.72266-1.31641h-10.33203c-.73047 0-1.32031.58984-1.32031 1.32422v67.73437c0 .73438.58984 1.32422 1.32031 1.32422h10.32422c1.0586 0 2.06641-.48437 2.72266-1.3164l18.59375-23.29688 18.58984 23.29688c.66406.83203 1.66406 1.3164 2.72656 1.3164h13.51563c.67969 0 1.05859-.79297.63281-1.33203m-42.78906-33.86719-12.45703 15.60938v-31.21485zm-148.74609-36.9375c-20.375 0-36.89063 16.53907-36.89063 36.94532s16.51563 36.94921 36.89063 36.94921c20.3789 0 36.89453-16.54296 36.89453-36.94921.00781-20.40625-16.51563-36.94532-36.89453-36.94532m0 61.33594c-13.08985 0-23.69532-10.92187-23.69532-24.39062s10.60547-24.39844 23.69532-24.39844c13.09375 0 23.69921 10.92187 23.69921 24.39844.00782 13.46875-10.60546 24.39062-23.69921 24.39062m234.3125-58.25781v48.04687l-38.34766-48.05468c-.66406-.82813-1.66406-1.3125-2.72656-1.31641h-10.33594c-.72656 0-1.32031.58984-1.32031 1.32422v32.64062c0 .79297.26562 1.5625.76562 2.1836l10.98047 13.76172c.48438.60546 1.45703.26171 1.45703-.50782v-28.40625l38.35547 48.07032c.66016.83203 1.66406 1.3164 2.72266 1.3164h10.32422c.73046 0 1.32031-.58984 1.32031-1.32422v-67.73437c0-.72656-.58985-1.32422-1.32031-1.32422h-10.55469c-.73047 0-1.32031.59766-1.32031 1.32422m-128.94532 14.67969v-14.67969c0-.73438-.58984-1.32422-1.32031-1.32422h-54.01562c-.73047 0-1.32032.58984-1.32032 1.32422v67.73437c0 .73438.58985 1.32422 1.32032 1.32422h10.55468c.73047 0 1.32032-.58984 1.32032-1.32422v-56.49218h30.26562l-20.42969 25.60937c-.3789.47656-.3789 1.16406 0 1.65234l23.33985 29.2461c.66406.83203 1.66406 1.3164 2.72656 1.3164h13.51562c.67969 0 1.0586-.79296.63282-1.32421l-23.98828-30.05469 16.6289-20.8086c.49219-.63671.76953-1.40625.76953-2.19921m-185.27343 54.3789h31.32031c1.05859 0 2.0664-.48437 2.72265-1.3164l7.91016-9.91797c.42578-.53125.04688-1.32422-.63281-1.32422h-29.44531v-56.5c0-.73438-.58985-1.32422-1.32032-1.32422h-10.55468c-.73047 0-1.32032.58984-1.32032 1.32422v67.73437c0 .72657.59766 1.32422 1.32032 1.32422"/>
  </a>
-</svg><!--//app-branding-->  
+</svg>
+		        </div><!--//app-branding-->  
 		        
 			    <nav id="app-nav-main" class="app-nav app-nav-main flex-grow-1">
 				    <ul class="app-menu list-unstyled accordion" id="menu-accordion">
 					    <li class="nav-item">
 					        <!--//Bootstrap Icons: https://icons.getbootstrap.com/ -->
-					        <a class="nav-link" href="index.php">
+					        <a class="nav-link active" href="index.php">
 						        <span class="nav-icon">
 						        <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-house-door" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
 		  <path fill-rule="evenodd" d="M7.646 1.146a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 .146.354v7a.5.5 0 0 1-.5.5H9.5a.5.5 0 0 1-.5-.5v-4H7v4a.5.5 0 0 1-.5.5H2a.5.5 0 0 1-.5-.5v-7a.5.5 0 0 1 .146-.354l6-6zM2.5 7.707V14H6v-4a.5.5 0 0 1 .5-.5h3a.5.5 0 0 1 .5.5v4h3.5V7.707L8 2.207l-5.5 5.5z"/>
@@ -217,7 +218,6 @@
 					        <div id="submenu-1" class="collapse submenu submenu-1" data-bs-parent="#menu-accordion">
 						        <ul class="submenu-list list-unstyled">
 							        <li class="submenu-item"><a class="submenu-link" href="account.php">Create</a></li>
-							        
 						        </ul>
 					        </div>
 					    </li><!--//nav-item-->
@@ -244,10 +244,11 @@
 						        </ul>
 					        </div>
 					    </li><!--//nav-item-->
-					    
+
+					   
 					    <li class="nav-item">
 					        <!--//Bootstrap Icons: https://icons.getbootstrap.com/ -->
-					        <a class="nav-link active" href="charts.php">
+					        <a class="nav-link" href="charts.php">
 						        <span class="nav-icon">
 						        <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-bar-chart-line" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
 	  <path fill-rule="evenodd" d="M11 2a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v12h.5a.5.5 0 0 1 0 1H.5a.5.5 0 0 1 0-1H1v-3a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v3h1V7a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v7h1V2zm1 12h2V2h-2v12zm-3 0V7H7v7h2zm-5 0v-3H2v3h2z"/>
@@ -256,14 +257,49 @@
 		                         <span class="nav-link-text">Charts</span>
 					        </a><!--//nav-link-->
 					    </li><!--//nav-item-->
+					    
 					    <li class="nav-item">
 					        <!--//Bootstrap Icons: https://icons.getbootstrap.com/ -->
 					        <a class="nav-link">
 						        <span class="nav-icon">
-						        
 						         </span>
 		                         
-	<!--//app-sidepanel-->
+					        </a><!--//nav-link-->
+					    </li><!--//nav-item-->					    
+				    </ul><!--//app-menu-->
+			    </nav><!--//app-nav-->
+			    <div class="app-sidepanel-footer">
+				    <nav class="app-nav app-nav-footer">
+					    <ul class="app-menu footer-menu list-unstyled">
+						    <li class="nav-item">
+						        <!--//Bootstrap Icons: https://icons.getbootstrap.com/ -->
+						        <a class="nav-link" href="#">
+							        <span class="nav-icon">
+
+							        </span>
+			                        
+						        </a><!--//nav-link-->
+						    </li><!--//nav-item-->
+						    <li class="nav-item">
+						        <!--//Bootstrap Icons: https://icons.getbootstrap.com/ -->
+						        <a class="nav-link" >
+							        <span class="nav-icon">
+							        </span>
+						        </a><!--//nav-link-->
+						    </li><!--//nav-item-->
+						    
+						        <!--//Bootstrap Icons: https://icons.getbootstrap.com/ -->
+						        <a class="nav-link" >
+							        <span class="nav-icon">						          
+							        </span>		                        
+						        </a><!--//nav-link-->
+						    </li><!--//nav-item-->
+					    </ul><!--//footer-menu-->
+				    </nav>
+			    </div><!--//app-sidepanel-footer-->
+		       
+	        </div><!--//sidepanel-inner-->
+	    </div><!--//app-sidepanel-->
     </header><!--//app-header-->
     
     <div class="app-wrapper">
