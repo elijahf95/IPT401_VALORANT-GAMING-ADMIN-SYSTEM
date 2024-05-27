@@ -1,3 +1,56 @@
+<?php
+// Database connection credentials
+$db_host = "localhost";
+$db_username = "user_valo";
+$db_password = "123";
+$db_name = "valo_db";
+
+// Create connection
+$conn = new mysqli($db_host, $db_username, $db_password, $db_name);
+
+// Check connection
+if ($conn->connect_error) {
+    die("Connection failed: " . $conn->connect_error);
+}
+
+// Function to insert team data into the database
+function insertTeamData($name, $leader_name, $match_date, $region_server, $conn) {
+    // Prepare and bind the SQL statement
+    $sql = "INSERT INTO teams (name, leader_name, match_date, region_server) VALUES (?, ?, ?, ?)";
+    $stmt = $conn->prepare($sql);
+    $stmt->bind_param("ssss", $name, $leader_name, $match_date, $region_server);
+
+    // Execute the statement
+    if ($stmt->execute()) {
+        // Get the auto-incremented team ID
+        $team_id = $conn->insert_id;
+        echo "New team created successfully with ID: " . $team_id;
+    } else {
+        echo "Error: " . $sql . "<br>" . $conn->error;
+    }
+
+    // Close statement
+    $stmt->close();
+}
+
+// Check if form is submitted
+if ($_SERVER["REQUEST_METHOD"] == "POST") {
+    // Get form data
+    $name = $_POST['teamName'];
+    $leader_name = $_POST['teamLeaderName'];
+    $match_date = $_POST['matchDate'];
+    $region_server = $_POST['regionServer'];
+
+    // Call the function to insert team data
+    insertTeamData($name, $leader_name, $match_date, $region_server, $conn);
+}
+
+// Close connection
+$conn->close();
+?>
+
+
+
 <!DOCTYPE html>
 <html lang="en"> 
 <head>
@@ -251,7 +304,7 @@
 	  <path fill-rule="evenodd" d="M11 2a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v12h.5a.5.5 0 0 1 0 1H.5a.5.5 0 0 1 0-1H1v-3a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v3h1V7a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v7h1V2zm1 12h2V2h-2v12zm-3 0V7H7v7h2zm-5 0v-3H2v3h2z"/>
 	</svg>
 						         </span>
-		                         <span class="nav-link-text">Charts</span>
+		                         <span class="nav-link-text">Arsenal Chart</span>
 					        </a><!--//nav-link-->
 					    </li><!--//nav-item-->
 					    
@@ -299,6 +352,8 @@
 	    </div><!--//app-sidepanel-->
     </header><!--//app-header-->
     
+
+<form action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>" method="post">
 <div class="app-wrapper">
     <div class="app-content pt-3 p-md-3 p-lg-4">
         <div class="container-xl">
@@ -334,7 +389,8 @@
                                     <div class="row justify-content-between align-items-center">
                                         <div class="col-auto">
                                             <div class="item-label"><strong>Team Name</strong></div>
-                                            <input type="text" class="form-control" id="teamName" placeholder="Enter team name">
+                                            <input type="text" class="form-control" id="teamName" name="teamName" placeholder="Enter team name">
+
                                         </div><!--//col-->
                                     </div><!--//row-->
                                 </div><!--//item-->
@@ -342,16 +398,15 @@
                                     <div class="row justify-content-between align-items-center">
                                         <div class="col-auto">
                                             <div class="item-label"><strong>Team Leader Name</strong></div>
-                                            <input type="text" class="form-control" id="teamLeaderName" placeholder="Enter team leader name">
+                                            <input type="text" class="form-control" id="teamLeaderName" name="teamLeaderName" placeholder="Enter team leader name">
                                         </div><!--//col-->
                                     </div><!--//row-->
                                 </div>
-
                                     <div class="item border-bottom py-3">
     <div class="row justify-content-between align-items-center">
         <div class="col-auto">
             <div class="item-label"><strong>Match Date</strong></div>
-            <input type="date" class="form-control" id="matchDate">
+            <input type="date" class="form-control" id="matchDate" name="matchDate">
         </div><!--//col-->
 </div><!--//item-->
 
@@ -360,7 +415,7 @@
                                     <div class="row justify-content-between align-items-center">
                                         <div class="col-auto">
                                             <div class="item-label"><strong>Region Server</strong></div>
-                                            <select class="form-select" id="regionServer">
+                                            <select class="form-select" id="regionServer" name="regionServer">
                                                 <option value="PH">PH</option>
                                                 <option value="NA">NA</option>
                                                 <option value="EUW">EUW</option>
@@ -406,7 +461,7 @@
                                         <input type="text" class="form-control" id="member4Role" name="member4Role" required>
                                     </div>
                                 </div>
-                                <button type="submit" class="btn btn-danger">Create Team</button>
+							<button type="submit" class="btn btn center-button" style="background-color: #a83c49;">Create Team</button>
                             </form>
                         </div><!--//app-card-body-->
                     </div><!--//app-card-->

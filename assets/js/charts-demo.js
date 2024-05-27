@@ -110,7 +110,7 @@ var barChartConfig = {
 	type: 'bar',
 
 	data: {
-		labels: ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul'],
+		labels: ['Vandal', 'Phantom', 'Operator', 'Sheriff', 'Outlaw', 'Guardian', 'Ghost'],
 		datasets: [{
 			label: 'Dataset 1',
 			backgroundColor: "rgba(255,0,0,0.0)", 
