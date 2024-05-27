@@ -53,7 +53,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 <!DOCTYPE html>
 <html lang="en"> 
 <head>
-    <title>VALORANT Gaming Admin System</title>
+    <title>VALORANT Sign up</title>
     
     <!-- Meta -->
     <meta charset="utf-8">
@@ -62,7 +62,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     
     <meta name="description" content="Portal - Bootstrap 5 Admin Dashboard Template For Developers">
     <meta name="author" content="Xiaoying Riley at 3rd Wave Media">    
-    <link rel="shortcut icon" href="favicon.ico"> 
+    <link rel="shortcut icon" href="valo-icon.png"> 
     
     <!-- FontAwesome JS-->
     <script defer src="assets/plugins/fontawesome/js/all.min.js"></script>
@@ -78,7 +78,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 		    <div class="d-flex flex-column align-content-end">
 			    <div class="app-auth-body mx-auto">	
 				    <div class="app-auth-branding mb-4">
-				    	<a href="#.php"> <svg width="300pt" height="200pt" viewBox="0 0 1100 697" version="1.1" xmlns="http://www.w3.org/2000/svg">
+				    	<a href="#"><svg width="300pt" height="200pt" viewBox="0 0 1100 697" version="1.1" xmlns="http://www.w3.org/2000/svg">
 <g id="f000000ff">
 </g>
 <g id="ff4655ff">
@@ -93,48 +93,37 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 <path fill="#ff4655" opacity="1.00" d=" M 768.68 547.05 C 768.47 545.50 769.16 543.48 770.99 543.44 C 777.64 543.17 784.30 543.40 790.95 543.33 C 793.53 543.16 796.23 544.01 797.80 546.17 C 823.45 578.19 849.00 610.29 874.67 642.29 C 874.67 610.52 874.66 578.75 874.67 546.97 C 874.24 544.97 875.80 543.03 877.89 543.35 C 884.93 543.36 891.97 543.19 899.00 543.44 C 900.80 543.51 901.45 545.51 901.25 547.05 C 901.25 591.69 901.25 636.33 901.25 680.97 C 901.46 682.49 900.79 684.55 898.97 684.58 C 891.98 684.78 884.97 684.64 877.98 684.65 C 875.67 684.74 873.48 683.63 872.12 681.80 C 846.50 649.81 820.97 617.74 795.33 585.77 C 795.30 604.52 795.38 623.28 795.30 642.03 C 795.79 643.70 793.41 645.13 792.40 643.61 C 785.04 634.68 777.93 625.54 770.67 616.53 C 769.05 614.76 768.53 612.38 768.65 610.05 C 768.69 589.05 768.64 568.05 768.68 547.05 Z" />
 <path fill="#ff4655" opacity="1.00" d=" M 919.64 546.01 C 919.43 544.19 921.37 543.14 922.96 543.35 C 952.32 543.30 981.68 543.35 1011.04 543.33 C 1013.58 543.17 1016.24 544.00 1017.79 546.14 C 1022.99 552.62 1028.24 559.08 1033.35 565.64 C 1034.70 566.74 1033.69 568.92 1031.99 568.62 C 1016.64 568.74 1001.28 568.62 985.92 568.67 C 985.85 606.11 986.01 643.55 986.00 680.99 C 986.36 682.78 985.13 684.84 983.13 684.63 C 976.12 684.69 969.10 684.72 962.10 684.62 C 960.61 684.75 959.31 683.43 959.46 681.96 C 959.21 644.20 959.45 606.43 959.25 568.67 C 947.14 568.64 935.02 568.71 922.92 568.65 C 921.31 568.84 919.39 567.73 919.64 565.91 C 919.54 559.28 919.53 552.64 919.64 546.01 Z" />
 </g>
-</svg></a></div>
+</svg></a>
+                    </div>
 
-
-
-				<form action="signup.php" method="post">
-					<h2 class="auth-heading text-center mb-4">Sign up your Account</h2>					
-	
-					<div class="auth-form-container text-start mx-auto">
-						<form class="auth-form auth-signup-form">         
-							<div class="email mb-3">
-								<label class="sr-only" for="signup-name">Name</label>
-            <input id="signup-name" name="signup-name" type="text" class="form-control signup-name" placeholder="Name" required="required">
-							</div>
-							<div class="email mb-3">
-								<label class="sr-only" for="signup-email">Email</label>
-            <input id="signup-email" name="signup-email" type="email" class="form-control signup-email" placeholder="Email address" required="required">
-							</div>
-							<div class="password mb-3">
-								<label class="sr-only" for="signup-password">Password</label>
-            <input id="signup-password" name="signup-password" type="password" class="form-control signup-password" placeholder="Password" required="required">
-							</div>
-							<div class="extra mb-3">
-								<div class="form-check">
-								</div>
-							</div><!--//extra-->
-							
-							<div class="text-center">
-								<button type="submit" class="btn app-btn-primary w-100 theme-btn mx-auto" style="background-color: #a83c49; border-color: #a83c49;">Sign Up</button>
-							</div>
-						</form><!--//auth-form-->
-						
-						<div class="auth-option text-center pt-5">Already have an account? <a class="text-link" href="login.php" style="color: #a83c49">Log in</a></div>
-					</div><!--//auth-form-container-->	
-			
-	    
+                    <form action="signup.php" method="post">
+                        <h2 class="auth-heading text-center mb-4">Sign up your Account</h2>					
+        
+                        <div class="auth-form-container text-start mx-auto">         
+                            <div class="email mb-3">
+                                <label class="sr-only" for="signup-name">Name</label>
+                                <input id="signup-name" name="signup-name" type="text" class="form-control signup-name" placeholder="Name" required="required">
+                            </div>
+                            <div class="email mb-3">
+                                <label class="sr-only" for="signup-email">Email</label>
+                                <input id="signup-email" name="signup-email" type="email" class="form-control signup-email" placeholder="Email address" required="required">
+                            </div>
+                            <div class="password mb-3">
+                                <label class="sr-only" for="signup-password">Password</label>
+                                <input id="signup-password" name="signup-password" type="password" class="form-control signup-password" placeholder="Password" required="required">
+                            </div>
+                            <div class="extra mb-3">
+                                <div class="form-check">
+                                </div>
+                            </div><!--//extra-->
+                            <div class="text-center">
+                                <button type="submit" class="btn app-btn-primary w-100 theme-btn mx-auto" style="background-color: #a83c49; border-color: #a83c49;">Sign Up</button>
+                            </div>
+                        </div><!--//auth-form-container-->	
+                    </form><!--//auth-form-->
+					
+                    <div class="auth-option text-center pt-5">Already have an account? <a class="text-link" href="login.php" style="color: #a83c49">Log in</a></div>
 			    </div><!--//auth-body-->
-			</form>
-		    
-			    <footer class="app-auth-footer">
-				    <div class="container text-center py-3">
-				    </div>
-			    </footer><!--//app-auth-footer-->	
 		    </div><!--//flex-column-->   
 	    </div><!--//auth-main-col-->
 	    <div class="col-12 col-md-5 col-lg-6 h-100 auth-background-col">
@@ -143,15 +132,11 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 		    <div class="auth-background-mask"></div>
 		    <div class="auth-background-overlay p-3 p-lg-5">
 			    <div class="d-flex flex-column align-content-end h-100">
-				    <div class="h-100"></div></div>
-				    </div>
-				</div>
+				    <div class="h-100"></div>
+			    </div>
 		    </div><!--//auth-background-overlay-->
 	    </div><!--//auth-background-col-->
-    
     </div><!--//row-->
-
-
 </body>
 </html> 
 

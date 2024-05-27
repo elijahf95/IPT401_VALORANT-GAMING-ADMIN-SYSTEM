@@ -14642,7 +14642,7 @@ button.close:focus {
 
 .app-login .auth-background-holder {
     background: url("../images/background/clove.jpg") no-repeat center center;
-    background-size: cover;
+    background-size: cover; 
     height: 100vh;
     min-height: 100%
 }
